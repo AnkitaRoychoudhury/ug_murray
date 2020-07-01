@@ -1,0 +1,79 @@
+<model>
+<species name="S" value="100.0" />
+<species name="F0" value="10.0" />
+<species name="F1" value="0.0" />
+<species name="G0" value="1.0" />
+<species name="G1" value="0.0" />
+<species name="P" value="25.0" />
+<species name="G1:P" value="0.0" />
+<species name="T" value="0.0" />
+<species name="R" value="100.0" />
+<species name="T:R" value="0.0" />
+<species name="X" value="0.0" />
+
+<parameter name="k1b" value="100.0" />
+<parameter name="k1u" value="20.0" />
+<parameter name="k2b" value="50.0" />
+<parameter name="k2u" value="10.0" />
+<parameter name="k3b" value="30.0" />
+<parameter name="k3u" value="10.0" />
+<parameter name="k4b" value="80.0" />
+<parameter name="k4u" value="2.0" />
+<parameter name="ktx" value="0.5" />
+<parameter name="ktl" value="5.0" />
+<parameter name="delta" value="0.5" />
+
+<reaction text= "S + S + F0 -- F1 ">
+	<propensity type="massaction" k="k1b" species="S*S*F0" />
+	<delay type="none" />
+</reaction>
+<reaction text= "F1 -- S + S + F0 ">
+	<propensity type="massaction" k="k1u" species="F1" />
+	<delay type="none" />
+</reaction>
+<reaction text= "F1 + G0 -- G1 ">
+	<propensity type="massaction" k="k2b" species="F1*G0" />
+	<delay type="none" />
+</reaction>
+<reaction text= "G1 -- G0 + F1 ">
+	<propensity type="massaction" k="k2u" species="G1" />
+	<delay type="none" />
+</reaction>
+<reaction text= "G1 + P -- G1:P ">
+	<propensity type="massaction" k="k3b" species="G1*P" />
+	<delay type="none" />
+</reaction>
+<reaction text= "G1:P -- G1 + P ">
+	<propensity type="massaction" k="k3u" species="G1:P" />
+	<delay type="none" />
+</reaction>
+<reaction text= "T + R -- T:R ">
+	<propensity type="massaction" k="k4b" species="T*R" />
+	<delay type="none" />
+</reaction>
+<reaction text= "T:R -- T + R ">
+	<propensity type="massaction" k="k4u" species="T:R" />
+	<delay type="none" />
+</reaction>
+<reaction text= "G1:P -- G1 + P + T ">
+	<propensity type="massaction" k="ktx" species="G1:P" />
+	<delay type="none" />
+</reaction>
+<reaction text= "T:R -- T + R + X ">
+	<propensity type="massaction" k="ktl" species="T:R" />
+	<delay type="none" />
+</reaction>
+<reaction text= "T -- ">
+	<propensity type="massaction" k="delta" species="T" />
+	<delay type="none" />
+</reaction>
+<reaction text= "X -- ">
+	<propensity type="massaction" k="delta" species="X" />
+	<delay type="none" />
+</reaction>
+<reaction text= "S -- ">
+	<propensity type="massaction" k="delta" species="S" />
+	<delay type="none" />
+</reaction>
+
+</model>

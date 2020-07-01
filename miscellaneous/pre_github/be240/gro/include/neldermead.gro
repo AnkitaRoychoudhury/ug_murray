@@ -1,0 +1,353 @@
+// ////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Utility Functions
+// 
+// 
+
+fun min_index_aux L mv mi i . 
+  if L = {} then mi else
+    if head L < mv then
+      min_index_aux (tail L) (head L) (i+1) (i+1)
+    else
+      min_index_aux (tail L) mv mi (i+1)
+    end
+  end;
+
+fun min_index L . min_index_aux (tail L) (head L) 0 0;
+
+fun max_index L . let negL := map (\ x . -x ) L in
+    min_index_aux (tail negL) (head negL) 0 0
+  end;
+
+fun max2_index_aux L m2v m2i mi mv i . 
+  if L = {} then m2i else
+    if m2v < head L & head L < mv then
+      max2_index_aux (tail L) (head L) (i+1) mi mv (i+1)
+    else
+      max2_index_aux (tail L) m2v m2i mv mi (i+1)
+    end
+  end;
+
+fun max2_index L . let mi := max_index L, mv := L[mi] in 
+    if mi != 0 then
+      max2_index_aux (tail L) (head L) 0 mi mv 0
+    else
+      max2_index_aux (tail (tail L)) (L[1]) 1 mi mv 1
+    end
+  end;
+
+fun vec_scale v a . map ( \ x . a*x ) v;
+
+fun vec_add u v . map sumlist (zip u v);
+
+fun vec_threshold u . map ( \ x . if x < 0 then 0 else x end ) u;
+
+fun zeros n . 
+  if n = 0 then {} else 0 @ ( zeros (n-1) ) end;
+
+fun centroid_aux L s mi i . 
+  if L = {} then s else
+    if mi = i then
+      centroid_aux (tail L) s mi (i+1)
+    else
+      centroid_aux (tail L) (vec_add (head L) s) mi (i+1)
+    end
+  end;
+
+fun centroid L w . 
+  let mi := max_index w, n := length(L)-1 in
+    vec_scale ( centroid_aux L (zeros n) mi 0.0 ) (1.0/n)
+  end;
+
+// ////////////////////////////////////////////////////////////////////////////////////////
+// 
+// The Nelder Mead Algorithm as a gro Program
+// 
+// 
+
+// globals 
+nm_k := {};
+nm_i := 0;
+
+program neldermead ( cost, tmax, nmax, k0, max_iterations ) := {
+
+  message ( 2, "Nelder Mead Optimization" );
+
+  // MODES
+  EVALUATE := -4; // start evaluating
+  EVALUATE_START := -3; 
+  EVALUATE_RUN := -2;
+  INIT1 := -1;
+  INIT2 := 0;
+  ORDER := 1;
+  REFLECT := 2;
+  REFLECT_EVAL := 3;
+  ACCEPT_REFLECTION := 4;
+  EXPANSION := 5;
+  TERMINATION := 6;
+  CONTRACTION := 7;
+  EXPANSION_EVAL := 8;
+  EXPANSION_CONCLUDE := 9;
+  CONTRACTION_EVAL := 10;
+  CONTRACTION_CONCLUDE := 11;
+  SHRINK := 12;
+
+  // search parameters
+  alpha := 1.0;
+  beta := 0.5;
+  gamma := 2.0;
+  delta := 0.5;
+
+  // variables
+  mini := 0;
+  maxi := 0;
+  max2i := 0;
+  t := 0;
+  L := {};
+  mode := INIT1;
+  return_mode := ORDER;
+  num := 0;
+
+  // parameters
+  num_params := length(k0)-1;
+  k := k0;
+  kcent := {};
+  krefl := {};
+  kexp := {};
+  kmr := {};
+  kcont := {};
+  kmin := {};
+
+  w := zeros (length(k0));
+  wrefl := 0;
+  wexp := 0;
+  wcont := 0;
+
+  true : { t := t + dt }
+
+  iterations := 0;
+  costlist := {};
+
+  message ( 0, "evaluating simplex" );
+
+  temp := 0;
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // Evaluation subroutine
+  // 
+
+  mode = EVALUATE : {
+    iterations := 0,
+    costlist := {},
+    mode := EVALUATE_START
+  }
+
+  mode = EVALUATE_START : {
+    message ( 1, "evaluation " <> tostring ( iterations ) <> " of p ( " <> tostring ( nm_k ) <> " )" ),
+    t := 0,
+    ecoli ( [], program p ( nm_k ) ),
+    mode := EVALUATE_RUN
+  }
+
+  mode = EVALUATE_RUN & ( t > tmax | length ( maptocells gfp end ) >= nmax ) : {
+    temp := cost 0,
+    message ( 1, "  got " <> tostring(temp) ),
+    costlist := temp @ costlist,
+    iterations := iterations + 1,
+    mode := if iterations >= max_iterations
+              then return_mode
+              else EVALUATE_START
+            end,
+    reset()
+  }
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // Initialization 
+  // 
+
+  mode = INIT1 : {
+
+    // start new set of simulations
+    nm_k := k[nm_i];
+    mode := EVALUATE;
+    return_mode := INIT2;
+
+  }
+
+  mode = INIT2 : {
+
+    // record results of latest simulation
+    w[nm_i] := ( sumlist costlist ) / ( length(costlist) ),
+    nm_i := nm_i + 1,
+    mode := if nm_i < num_params + 1
+              then INIT1
+              else ORDER
+            end
+  }
+
+  mode = ORDER : {
+    mini  := min_index w,
+    max2i := max2_index w,
+    maxi  := max_index w,
+    message ( 0, "minimum of current simplex: " <> tostring(k[mini]) <> " => " <> tostring ( w[mini] ) ),
+    foreach p in k[mini] do
+      print ( p, ", " )
+    end,
+    print ( w[mini], "\n" ),
+    mode  := REFLECT
+  }
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // Reflection
+  // 
+
+  mode = REFLECT : {
+
+    message ( 0, "reflecting" ),
+
+    // determine centroid and reflection points
+    kcent := centroid k w,
+    krefl := vec_threshold ( vec_add (vec_scale kcent (1+alpha)) (vec_scale (k[maxi]) (-alpha)) ),
+    
+    // start a simulation to evaluate the cost at the reflection point
+    nm_k := krefl,
+    mode := EVALUATE,
+    return_mode := REFLECT_EVAL
+
+  }
+
+  mode = REFLECT_EVAL & t > tmax : {
+  
+    // simulation done, figure out the cost of the reflextion point
+    wrefl := ( sumlist costlist ) / ( length(costlist) ),
+
+    // decide whether to accept the reflection point
+    mode := if w[mini] <= wrefl & wrefl < w[max2i]
+      then ACCEPT_REFLECTION
+      else if wrefl < w[mini] 
+        then EXPANSION
+        else CONTRACTION
+      end
+    end,
+
+    reset()
+
+  }
+ 
+  mode = ACCEPT_REFLECTION : {
+    message ( 0, "  => reflection point accepted!" ),
+    k[maxi] := krefl,
+    w[maxi] := wrefl,
+    mode := TERMINATION
+  }
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // Expansion
+  // 
+
+  mode = EXPANSION : {
+
+    message ( 0, "expanding" ),
+
+    // determine the expansion point
+    kexp := vec_threshold ( vec_add (vec_scale krefl gamma) (vec_scale kcent (1-gamma)) ),
+
+    // start a simulation to evaluate the cost at the expansion point
+    nm_k := kexp,
+    mode := EVALUATE,
+    return_mode := EXPANSION_EVAL
+
+  }
+
+  mode = EXPANSION_EVAL & t > tmax : {
+
+    // simulation done, figure out the cost of the expansion point
+    wexp := ( sumlist costlist ) / ( length(costlist) ),
+
+    // decide whether to accept the expansion point
+    mode := EXPANSION_CONCLUDE,
+
+    reset()
+
+  }
+
+  mode = EXPANSION_CONCLUDE & wexp < wrefl : {
+    k[maxi] := kexp,
+    w[maxi] := wexp,
+    mode := TERMINATION
+  }
+
+  mode = EXPANSION_CONCLUDE & wexp >= wrefl : {
+    k[maxi] := krefl,
+    w[maxi] := wrefl,
+    mode := TERMINATION
+  }
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // Contraction
+  // 
+  mode = CONTRACTION : {
+
+    message ( 0, "contracting" ),
+ 
+    // figure out kcont
+    kmr := if w[max2i] <= wrefl & wrefl < w[maxi]
+      then krefl
+      else k[maxi]
+    end,
+    kcont := vec_threshold ( vec_add ( vec_scale kmr beta ) ( vec_scale kcent (1-beta) ) ),
+
+    // start a simulation to evaluate the cost at the contraction point
+    nm_k := kcont,
+    mode := EVALUATE,
+    return_mode := CONTRACTION_EVAL
+
+  }
+
+  mode = CONTRACTION_EVAL: {
+
+    // simulation done, figure out the cost of the contraction point
+    wcont :=  ( sumlist costlist ) / ( length(costlist) ),
+
+    // decide whether to accept the expansion point
+    mode := if ( w[max2i] <= wrefl & wrefl < w[maxi] & wcont < wrefl ) | ( wrefl > w[maxi] & wcont < w[maxi] )
+      then CONTRACTION_CONCLUDE
+      else SHRINK
+    end,
+
+    reset()
+    
+  }
+
+  mode = CONTRACTION_CONCLUDE : {
+    message ( 0, "  => contraction accepted" ),
+    k[maxi] := kcont,
+    w[maxi] := wcont,
+    mode := TERMINATION
+  }
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // Shrink
+  // 
+
+  mode = SHRINK : {
+    message ( 0, "shrinking\n" ),
+    kmin := k[mini],
+    k := map ( \ v . vec_threshold ( vec_add ( vec_scale v delta ) ( vec_scale kmin (1-delta) ) ) ) k,
+    k[mini] := kmin,
+    mode := INIT1,
+    return_mode := TERMINATION,
+    message ( 0, "evaluating shrunken simplex" ),
+    nm_i := 0
+  }
+
+  // ///////////////////////////////////////////////////////////////////////////
+  // Termination / repeat
+  // 
+
+  mode = TERMINATION : {
+    num := num + 1,
+    mode := ORDER
+  }
+
+};
