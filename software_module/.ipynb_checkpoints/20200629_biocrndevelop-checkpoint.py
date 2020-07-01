@@ -376,6 +376,8 @@ def plot_entire_with_enzymes(k_bf, k_uf, k_cat_atp, enz_init, glucose_init, atp_
         return area1, isob_ss
     
     
+    
+    
 def return_df(k_bf, k_uf, k_cat_atp, enz_init, glucose_init, atp_init, pi_init, nadp_init, atpase_init, 
                              t_max, bpg_13 = 0,
                             area_isobss = False):
@@ -489,3 +491,78 @@ def return_df(k_bf, k_uf, k_cat_atp, enz_init, glucose_init, atp_init, pi_init, 
 
     return re, timepoints
    
+    
+def get_SBML(k_bf, k_uf, k_cat_atp):
+
+    k_bf = k_bf #20 #660
+    k_uf = k_uf #20 #144 # per hour
+
+    #
+
+    E1_hex = Enzyme(enzyme_name = "hex", substrate = ['glucose'],
+                fuel = ['atp'],product = ['g6p'], waste = ['adp'], k_bf = k_bf , k_uf = k_uf)
+
+    E2_pgi = Enzyme(enzyme_name = 'pgi', substrate = ['g6p'], fuel = [],
+               product = ['f6p'], waste = [], k_bf = k_bf , k_uf = k_uf)
+
+    E3_pfk = Enzyme(enzyme_name = 'pfk', substrate = ['f6p'], fuel = ['atp'], product = ['f16p'],
+               waste = ['adp'], k_bf = k_bf , k_uf = k_uf)
+
+    E4_ald_tpi = Enzyme(enzyme_name ='ald_tpi' , substrate = ['f16p'], fuel = [], product = ['g3p', 'g3p'], 
+                waste = [], k_bf = k_bf , k_uf = k_uf )
+
+    E5_gapN = Enzyme(enzyme_name ='gapN' , substrate = ['g3p', 'g3p'], fuel = ['nadp', 'nadp'], product = ['3pg', '3pg'], 
+                waste = ['nadph', 'nadph'], k_bf = k_bf , k_uf = k_uf)
+
+    E6_mGapDH = Enzyme(enzyme_name ='mGapDH' , substrate = ['g3p', 'g3p'], fuel = ['pi', 'nadp', 'nadp'], product = ['13bpg'], 
+                waste = ['nadph', 'nadph'],k_bf = k_bf , k_uf = k_uf)
+
+    E7_pgk = Enzyme(enzyme_name = 'pgk', substrate = ['13bpg'], fuel = ['adp'], product = ['3pg', '3pg'], 
+                waste = ['atp'], k_bf = k_bf , k_uf = k_uf)
+
+    E8_pgm = Enzyme(enzyme_name ='pgm' , substrate = ['3pg', '3pg'], fuel = [], product = ['2pg', '2pg'], 
+                waste = [], k_bf = k_bf , k_uf = k_uf)
+
+    E9_eno = Enzyme(enzyme_name ='eno' , substrate = ['2pg', '2pg'], fuel = [], product = ['pep', 'pep'], 
+                waste = [],k_bf = k_bf , k_uf = k_uf)
+
+    E10_pyk = Enzyme(enzyme_name = 'pyk', substrate = ['pep', 'pep'], fuel = ['adp', 'adp'], product = ['pyruvate', 'pyruvate'], 
+                waste = ['atp', 'atp'], k_bf = k_bf , k_uf = k_uf) # irreversible
+
+    E11_alsS = Enzyme(enzyme_name = 'alsS', substrate = ['pyruvate', 'pyruvate'], fuel = [], product = ['acetolac'], 
+                waste = [], k_bf = k_bf , k_uf = k_uf) # irreversible
+
+    E12_IlvC = Enzyme(enzyme_name = 'IlvC', substrate = ['acetolac'], fuel = ['nadph'], product = ['23dih3mebut'], 
+                waste = ['nadp'], k_bf = k_bf , k_uf = k_uf)
+
+    E13_IlvD = Enzyme(enzyme_name ='IlvD' , substrate = ['23dih3mebut'], fuel = [], product = ['3me2oxo'], 
+                waste = [],k_bf = k_bf , k_uf = k_uf)
+
+    E14_kivD = Enzyme(enzyme_name ='kivD' , substrate = ['3me2oxo'], fuel = [], product = ['isobutanal'], 
+                waste = [], k_bf = k_bf , k_uf = k_uf) # irreversible
+
+    E15_yahk = Enzyme(enzyme_name = 'yahk', substrate = ['isobutanal'], fuel = ['nadph'], product = ['isobutanol'],
+                      waste = ['nadp'], k_bf = k_bf , k_uf = k_uf)
+    
+    E16_atpase = Enzyme(enzyme_name = 'atpase', substrate = [], fuel = ['atp'], product = [],
+                        waste = ['adp', 'pi'], k_bf = k_bf, k_uf = k_uf, k_cat = k_cat_atp)
+
+
+#     E16_all_other_atp = Enzyme(enzyme_name = 'atp_synthase', substrate = [], fuel = ['atp'], 
+#                                product = [], waste = ['adp', 'pi'], k_bf = k_bf, k_uf = k_uf, k_cat = 1,)
+
+    myMixture = EnergyTxTl(components = [E1_hex,E2_pgi,E3_pfk, E4_ald_tpi, E5_gapN, E6_mGapDH, E7_pgk, E8_pgm, E9_eno, E10_pyk, 
+                                        E11_alsS, E12_IlvC, E13_IlvD, E14_kivD, E15_yahk, E16_atpase])
+    myMixture_atp = EnergyTxTl(components = [E16_atpase])
+    
+    CRN = myMixture.compile_crn()
+    CRN_atp = myMixture_atp.compile_crn()
+
+
+    
+    CRN.write_sbml_file("CRN.xml")
+    # CRN_atp.write_sbml_file("CRN_atp.sbml")
+    
+    return None
+    
+ 
