@@ -4,6 +4,9 @@
 from biocrnpyler import *
 from scipy.integrate import simps
 from numpy import trapz
+import bokeh.io
+import bokeh.plotting
+bokeh.io.output_notebook()
 
 def check_type(item, material_type_str): # call set_species
     if isinstance(item, Species):
