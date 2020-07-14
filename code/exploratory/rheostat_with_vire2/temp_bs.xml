@@ -1,18 +1,18 @@
 <model>
-<species name="dna_g_vire2biocrnpyler_72951" value="1.0" />
-<species name="tetR_vire2biocrnpyler_72951" value="10.0" />
-<species name="rna_g_vire2biocrnpyler_72951" value="0.0" />
-<species name="VirE2_f_vire2biocrnpyler_72951" value="0.0" />
-<species name="aTc_i_vire2biocrnpyler_72951" value="15.0" />
-<species name="complex_aTc_i_tetR_vire2biocrnpyler_72951" value="0.0" />
-<species name="VirE2_b_vire2biocrnpyler_72951" value="0.0" />
-<species name="complex_dna_g_tetR_vire2biocrnpyler_72951" value="0.0" />
-<species name="complex_aTc_i_dna_g_tetR_vire2biocrnpyler_72951" value="0.0" />
+<species name="dna_g_vire2biocrnpyler_395564" value="1.0" />
+<species name="tetR_vire2biocrnpyler_395564" value="10.0" />
+<species name="rna_g_vire2biocrnpyler_395564" value="0.0" />
+<species name="VirE2_f_vire2biocrnpyler_395564" value="0.0" />
+<species name="aTc_i_vire2biocrnpyler_395564" value="15.0" />
+<species name="complex_aTc_i_tetR_vire2biocrnpyler_395564" value="0.0" />
+<species name="VirE2_b_vire2biocrnpyler_395564" value="0.0" />
+<species name="complex_dna_g_tetR_vire2biocrnpyler_395564" value="0.0" />
+<species name="complex_aTc_i_dna_g_tetR_vire2biocrnpyler_395564" value="0.0" />
 <species name="enzyme_hex_rheostatbiocrnpyler_66442" value="0.2" />
-<species name="ATP_vire2biocrnpyler_72951_1_combined" value="10.0" />
+<species name="ATP_vire2biocrnpyler_395564_1_combined" value="30.0" />
 <species name="molecule_glucose_rheostatbiocrnpyler_66442" value="30.0" />
 <species name="molecule_g6p_rheostatbiocrnpyler_66442" value="0.0" />
-<species name="ADP_vire2biocrnpyler_72951_1_combined" value="0.0" />
+<species name="ADP_vire2biocrnpyler_395564_1_combined" value="0.0" />
 <species name="complex_enzyme_hex_metabolite_atp_molecule_glucose_rheostatbiocrnpyler_66442" value="0.0" />
 <species name="complex_enzyme_hex_metabolite_adp_molecule_g6p_rheostatbiocrnpyler_66442" value="0.0" />
 <species name="enzyme_pgi_rheostatbiocrnpyler_66442" value="0.2" />
@@ -34,7 +34,7 @@
 <species name="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_rheostatbiocrnpyler_66442" value="0.0" />
 <species name="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_rheostatbiocrnpyler_66442" value="0.0" />
 <species name="enzyme_mGapDH_rheostatbiocrnpyler_66442" value="0.2" />
-<species name="P_vire2biocrnpyler_72951_1_combined" value="30.0" />
+<species name="P_vire2biocrnpyler_395564_1_combined" value="30.0" />
 <species name="molecule_13bpg_rheostatbiocrnpyler_66442" value="0.0" />
 <species name="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_rheostatbiocrnpyler_66442" value="0.0" />
 <species name="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_rheostatbiocrnpyler_66442" value="0.0" />
@@ -74,22 +74,22 @@
 <species name="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_rheostatbiocrnpyler_66442" value="0.0" />
 <species name="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_rheostatbiocrnpyler_66442" value="0.0" />
 
-<parameter name="k" value="0.06" />
-<parameter name="k_r0_1_vire2biocrnpyler_72951" value="0.0006" />
-<parameter name="k_r2_vire2biocrnpyler_72951" value="3.9" />
-<parameter name="k_r2_1_vire2biocrnpyler_72951" value="0.018" />
-<parameter name="k_r4_vire2biocrnpyler_72951" value="6000.0" />
-<parameter name="k_r4_1_vire2biocrnpyler_72951" value="600.0" />
-<parameter name="k_r6_vire2biocrnpyler_72951" value="1.125" />
+<parameter name="k" value="0.001" />
+<parameter name="k_r0_1_vire2biocrnpyler_395564" value="1e-05" />
+<parameter name="k_r2_vire2biocrnpyler_395564" value="0.065" />
+<parameter name="k_r2_1_vire2biocrnpyler_395564" value="0.0003" />
+<parameter name="k_r4_vire2biocrnpyler_395564" value="100.0" />
+<parameter name="k_r4_1_vire2biocrnpyler_395564" value="10.0" />
+<parameter name="k_r6_vire2biocrnpyler_395564" value="0.01875" />
 <parameter name="n" value="1.0" />
 <parameter name="K" value="20.0" />
-<parameter name="k_r7_vire2biocrnpyler_72951" value="0.06" />
-<parameter name="k_r8_vire2biocrnpyler_72951" value="36.0" />
-<parameter name="n_r8_vire2biocrnpyler_72951" value="1.0" />
-<parameter name="K_r8_vire2biocrnpyler_72951" value="1.0" />
-<parameter name="k_r9_vire2biocrnpyler_72951" value="60.0" />
-<parameter name="k_r10_vire2biocrnpyler_72951" value="0.06" />
-<parameter name="k_r11_vire2biocrnpyler_72951" value="0.0006" />
+<parameter name="k_r7_vire2biocrnpyler_395564" value="0.001" />
+<parameter name="k_r8_vire2biocrnpyler_395564" value="0.6" />
+<parameter name="n_r8_vire2biocrnpyler_395564" value="1.0" />
+<parameter name="K_r8_vire2biocrnpyler_395564" value="1.0" />
+<parameter name="k_r9_vire2biocrnpyler_395564" value="1.0" />
+<parameter name="k_r10_vire2biocrnpyler_395564" value="0.001" />
+<parameter name="k_r11_vire2biocrnpyler_395564" value="1e-05" />
 <parameter name="k_r0_rheostatbiocrnpyler_66442" value="15.0" />
 <parameter name="k_r0_1_rheostatbiocrnpyler_66442" value="1.5" />
 <parameter name="k_r2_rheostatbiocrnpyler_66442" value="36000.0" />
@@ -165,22 +165,22 @@
 <parameter name="k_r72_rheostatbiocrnpyler_66442" value="36000.0" />
 <parameter name="k_r73_rheostatbiocrnpyler_66442" value="15.0" />
 <parameter name="k_r73_1_rheostatbiocrnpyler_66442" value="1.5" />
-<parameter name="DummyVar_BimolecularPropensity_k_0" value="0.06" />
-<parameter name="DummyVar_UnimolecularPropensity_k_1" value="0.0006000000000000001" />
-<parameter name="DummyVar_BimolecularPropensity_k_2" value="3.9000000000000004" />
-<parameter name="DummyVar_UnimolecularPropensity_k_3" value="0.018" />
-<parameter name="DummyVar_UnimolecularPropensity_k_4" value="6000.0" />
-<parameter name="DummyVar_BimolecularPropensity_k_5" value="600.0" />
-<parameter name="DummyVar_NegativeProportionalHillPropensity_k_6" value="1.125" />
+<parameter name="DummyVar_BimolecularPropensity_k_0" value="0.001" />
+<parameter name="DummyVar_UnimolecularPropensity_k_1" value="1e-05" />
+<parameter name="DummyVar_BimolecularPropensity_k_2" value="0.065" />
+<parameter name="DummyVar_UnimolecularPropensity_k_3" value="0.0003" />
+<parameter name="DummyVar_UnimolecularPropensity_k_4" value="100.0" />
+<parameter name="DummyVar_BimolecularPropensity_k_5" value="10.0" />
+<parameter name="DummyVar_NegativeProportionalHillPropensity_k_6" value="0.01875" />
 <parameter name="DummyVar_NegativeProportionalHillPropensity_K_7" value="20.0" />
 <parameter name="DummyVar_NegativeProportionalHillPropensity_n_8" value="1.0" />
-<parameter name="DummyVar_UnimolecularPropensity_k_9" value="0.06" />
-<parameter name="DummyVar_PositiveProportionalHillPropensity_k_10" value="36.0" />
+<parameter name="DummyVar_UnimolecularPropensity_k_9" value="0.001" />
+<parameter name="DummyVar_PositiveProportionalHillPropensity_k_10" value="0.6" />
 <parameter name="DummyVar_PositiveProportionalHillPropensity_K_11" value="1.0" />
 <parameter name="DummyVar_PositiveProportionalHillPropensity_n_12" value="1.0" />
-<parameter name="DummyVar_UnimolecularPropensity_k_13" value="60.0" />
-<parameter name="DummyVar_UnimolecularPropensity_k_14" value="0.06" />
-<parameter name="DummyVar_UnimolecularPropensity_k_15" value="0.0006000000000000001" />
+<parameter name="DummyVar_UnimolecularPropensity_k_13" value="1.0" />
+<parameter name="DummyVar_UnimolecularPropensity_k_14" value="0.001" />
+<parameter name="DummyVar_UnimolecularPropensity_k_15" value="1e-05" />
 <parameter name="DummyVar_MassActionPropensity_k_16" value="15.0" />
 <parameter name="DummyVar_UnimolecularPropensity_k_17" value="1.5" />
 <parameter name="DummyVar_UnimolecularPropensity_k_18" value="36000.0" />
@@ -257,59 +257,59 @@
 <parameter name="DummyVar_UnimolecularPropensity_k_89" value="15.0" />
 <parameter name="DummyVar_MassActionPropensity_k_90" value="1.5" />
 
-<reaction text= "dna_g_vire2biocrnpyler_72951 + tetR_vire2biocrnpyler_72951 -- complex_dna_g_tetR_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_0" species="dna_g_vire2biocrnpyler_72951*tetR_vire2biocrnpyler_72951" />
+<reaction text= "dna_g_vire2biocrnpyler_395564 + tetR_vire2biocrnpyler_395564 -- complex_dna_g_tetR_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_0" species="dna_g_vire2biocrnpyler_395564*tetR_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_dna_g_tetR_vire2biocrnpyler_72951 -- dna_g_vire2biocrnpyler_72951 + tetR_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_1" species="complex_dna_g_tetR_vire2biocrnpyler_72951" />
+<reaction text= "complex_dna_g_tetR_vire2biocrnpyler_395564 -- dna_g_vire2biocrnpyler_395564 + tetR_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_1" species="complex_dna_g_tetR_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_dna_g_tetR_vire2biocrnpyler_72951 + aTc_i_vire2biocrnpyler_72951 -- complex_aTc_i_dna_g_tetR_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_2" species="complex_dna_g_tetR_vire2biocrnpyler_72951*aTc_i_vire2biocrnpyler_72951" />
+<reaction text= "complex_dna_g_tetR_vire2biocrnpyler_395564 + aTc_i_vire2biocrnpyler_395564 -- complex_aTc_i_dna_g_tetR_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_2" species="complex_dna_g_tetR_vire2biocrnpyler_395564*aTc_i_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_aTc_i_dna_g_tetR_vire2biocrnpyler_72951 -- complex_dna_g_tetR_vire2biocrnpyler_72951 + aTc_i_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_3" species="complex_aTc_i_dna_g_tetR_vire2biocrnpyler_72951" />
+<reaction text= "complex_aTc_i_dna_g_tetR_vire2biocrnpyler_395564 -- complex_dna_g_tetR_vire2biocrnpyler_395564 + aTc_i_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_3" species="complex_aTc_i_dna_g_tetR_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_aTc_i_dna_g_tetR_vire2biocrnpyler_72951 -- dna_g_vire2biocrnpyler_72951 + complex_aTc_i_tetR_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_4" species="complex_aTc_i_dna_g_tetR_vire2biocrnpyler_72951" />
+<reaction text= "complex_aTc_i_dna_g_tetR_vire2biocrnpyler_395564 -- dna_g_vire2biocrnpyler_395564 + complex_aTc_i_tetR_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_4" species="complex_aTc_i_dna_g_tetR_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "dna_g_vire2biocrnpyler_72951 + complex_aTc_i_tetR_vire2biocrnpyler_72951 -- complex_aTc_i_dna_g_tetR_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_5" species="dna_g_vire2biocrnpyler_72951*complex_aTc_i_tetR_vire2biocrnpyler_72951" />
+<reaction text= "dna_g_vire2biocrnpyler_395564 + complex_aTc_i_tetR_vire2biocrnpyler_395564 -- complex_aTc_i_dna_g_tetR_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_5" species="dna_g_vire2biocrnpyler_395564*complex_aTc_i_tetR_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "dna_g_vire2biocrnpyler_72951 -- dna_g_vire2biocrnpyler_72951 + rna_g_vire2biocrnpyler_72951 ">
-	<propensity type="proportionalhillnegative" k="DummyVar_NegativeProportionalHillPropensity_k_6" K="DummyVar_NegativeProportionalHillPropensity_K_7" n="DummyVar_NegativeProportionalHillPropensity_n_8" s1="tetR_vire2biocrnpyler_72951" d="dna_g_vire2biocrnpyler_72951" />
+<reaction text= "dna_g_vire2biocrnpyler_395564 -- dna_g_vire2biocrnpyler_395564 + rna_g_vire2biocrnpyler_395564 ">
+	<propensity type="proportionalhillnegative" k="DummyVar_NegativeProportionalHillPropensity_k_6" K="DummyVar_NegativeProportionalHillPropensity_K_7" n="DummyVar_NegativeProportionalHillPropensity_n_8" s1="tetR_vire2biocrnpyler_395564" d="dna_g_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "dna_g_vire2biocrnpyler_72951 -- dna_g_vire2biocrnpyler_72951 + rna_g_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_9" species="dna_g_vire2biocrnpyler_72951" />
+<reaction text= "dna_g_vire2biocrnpyler_395564 -- dna_g_vire2biocrnpyler_395564 + rna_g_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_9" species="dna_g_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "rna_g_vire2biocrnpyler_72951 + ATP_vire2biocrnpyler_72951_1_combined -- rna_g_vire2biocrnpyler_72951 + ADP_vire2biocrnpyler_72951_1_combined + VirE2_f_vire2biocrnpyler_72951 + P_vire2biocrnpyler_72951_1_combined ">
-	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_10" K="DummyVar_PositiveProportionalHillPropensity_K_11" n="DummyVar_PositiveProportionalHillPropensity_n_12" s1="ATP_vire2biocrnpyler_72951_1_combined" d="rna_g_vire2biocrnpyler_72951" />
+<reaction text= "rna_g_vire2biocrnpyler_395564 + ATP_vire2biocrnpyler_395564_1_combined -- rna_g_vire2biocrnpyler_395564 + ADP_vire2biocrnpyler_395564_1_combined + VirE2_f_vire2biocrnpyler_395564 + P_vire2biocrnpyler_395564_1_combined ">
+	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_10" K="DummyVar_PositiveProportionalHillPropensity_K_11" n="DummyVar_PositiveProportionalHillPropensity_n_12" s1="ATP_vire2biocrnpyler_395564_1_combined" d="rna_g_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "VirE2_f_vire2biocrnpyler_72951 -- VirE2_b_vire2biocrnpyler_72951 ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_13" species="VirE2_f_vire2biocrnpyler_72951" />
+<reaction text= "VirE2_f_vire2biocrnpyler_395564 -- VirE2_b_vire2biocrnpyler_395564 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_13" species="VirE2_f_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "rna_g_vire2biocrnpyler_72951 -- ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_14" species="rna_g_vire2biocrnpyler_72951" />
+<reaction text= "rna_g_vire2biocrnpyler_395564 -- ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_14" species="rna_g_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "VirE2_f_vire2biocrnpyler_72951 -- ">
-	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_15" species="VirE2_f_vire2biocrnpyler_72951" />
+<reaction text= "VirE2_f_vire2biocrnpyler_395564 -- ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_15" species="VirE2_f_vire2biocrnpyler_395564" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_hex_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined + molecule_glucose_rheostatbiocrnpyler_66442 -- complex_enzyme_hex_metabolite_atp_molecule_glucose_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_16" species="enzyme_hex_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_72951_1_combined*molecule_glucose_rheostatbiocrnpyler_66442" />
+<reaction text= "enzyme_hex_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined + molecule_glucose_rheostatbiocrnpyler_66442 -- complex_enzyme_hex_metabolite_atp_molecule_glucose_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_16" species="enzyme_hex_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_395564_1_combined*molecule_glucose_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_hex_metabolite_atp_molecule_glucose_rheostatbiocrnpyler_66442 -- enzyme_hex_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined + molecule_glucose_rheostatbiocrnpyler_66442 ">
+<reaction text= "complex_enzyme_hex_metabolite_atp_molecule_glucose_rheostatbiocrnpyler_66442 -- enzyme_hex_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined + molecule_glucose_rheostatbiocrnpyler_66442 ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_17" species="complex_enzyme_hex_metabolite_atp_molecule_glucose_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
@@ -317,12 +317,12 @@
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_18" species="complex_enzyme_hex_metabolite_atp_molecule_glucose_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_hex_metabolite_adp_molecule_g6p_rheostatbiocrnpyler_66442 -- enzyme_hex_rheostatbiocrnpyler_66442 + molecule_g6p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined ">
+<reaction text= "complex_enzyme_hex_metabolite_adp_molecule_g6p_rheostatbiocrnpyler_66442 -- enzyme_hex_rheostatbiocrnpyler_66442 + molecule_g6p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_19" species="complex_enzyme_hex_metabolite_adp_molecule_g6p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_hex_rheostatbiocrnpyler_66442 + molecule_g6p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined -- complex_enzyme_hex_metabolite_adp_molecule_g6p_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_20" species="enzyme_hex_rheostatbiocrnpyler_66442*molecule_g6p_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_72951_1_combined" />
+<reaction text= "enzyme_hex_rheostatbiocrnpyler_66442 + molecule_g6p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined -- complex_enzyme_hex_metabolite_adp_molecule_g6p_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_20" species="enzyme_hex_rheostatbiocrnpyler_66442*molecule_g6p_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_395564_1_combined" />
 	<delay type="none" />
 </reaction>
 <reaction text= "enzyme_pgi_rheostatbiocrnpyler_66442 + molecule_g6p_rheostatbiocrnpyler_66442 -- complex_enzyme_pgi_molecule_g6p_rheostatbiocrnpyler_66442 ">
@@ -345,11 +345,11 @@
 	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_25" species="enzyme_pgi_rheostatbiocrnpyler_66442*molecule_f6p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_pfk_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined + molecule_f6p_rheostatbiocrnpyler_66442 -- complex_enzyme_pfk_metabolite_atp_molecule_f6p_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_26" species="enzyme_pfk_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_72951_1_combined*molecule_f6p_rheostatbiocrnpyler_66442" />
+<reaction text= "enzyme_pfk_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined + molecule_f6p_rheostatbiocrnpyler_66442 -- complex_enzyme_pfk_metabolite_atp_molecule_f6p_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_26" species="enzyme_pfk_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_395564_1_combined*molecule_f6p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_pfk_metabolite_atp_molecule_f6p_rheostatbiocrnpyler_66442 -- enzyme_pfk_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined + molecule_f6p_rheostatbiocrnpyler_66442 ">
+<reaction text= "complex_enzyme_pfk_metabolite_atp_molecule_f6p_rheostatbiocrnpyler_66442 -- enzyme_pfk_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined + molecule_f6p_rheostatbiocrnpyler_66442 ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_27" species="complex_enzyme_pfk_metabolite_atp_molecule_f6p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
@@ -357,12 +357,12 @@
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_28" species="complex_enzyme_pfk_metabolite_atp_molecule_f6p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_pfk_metabolite_adp_molecule_f16p_rheostatbiocrnpyler_66442 -- enzyme_pfk_rheostatbiocrnpyler_66442 + molecule_f16p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined ">
+<reaction text= "complex_enzyme_pfk_metabolite_adp_molecule_f16p_rheostatbiocrnpyler_66442 -- enzyme_pfk_rheostatbiocrnpyler_66442 + molecule_f16p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_29" species="complex_enzyme_pfk_metabolite_adp_molecule_f16p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_pfk_rheostatbiocrnpyler_66442 + molecule_f16p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined -- complex_enzyme_pfk_metabolite_adp_molecule_f16p_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_30" species="enzyme_pfk_rheostatbiocrnpyler_66442*molecule_f16p_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_72951_1_combined" />
+<reaction text= "enzyme_pfk_rheostatbiocrnpyler_66442 + molecule_f16p_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined -- complex_enzyme_pfk_metabolite_adp_molecule_f16p_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_30" species="enzyme_pfk_rheostatbiocrnpyler_66442*molecule_f16p_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_395564_1_combined" />
 	<delay type="none" />
 </reaction>
 <reaction text= "enzyme_ald_tpi_rheostatbiocrnpyler_66442 + molecule_f16p_rheostatbiocrnpyler_66442 -- complex_enzyme_ald_tpi_molecule_f16p_rheostatbiocrnpyler_66442 ">
@@ -405,11 +405,11 @@
 	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_40" species="enzyme_gapN_rheostatbiocrnpyler_66442*molecule_3pg_rheostatbiocrnpyler_66442*molecule_3pg_rheostatbiocrnpyler_66442*metabolite_nadph_rheostatbiocrnpyler_66442*metabolite_nadph_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_mGapDH_rheostatbiocrnpyler_66442 + P_vire2biocrnpyler_72951_1_combined + metabolite_nadp_rheostatbiocrnpyler_66442 + metabolite_nadp_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 -- complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_41" species="enzyme_mGapDH_rheostatbiocrnpyler_66442*P_vire2biocrnpyler_72951_1_combined*metabolite_nadp_rheostatbiocrnpyler_66442*metabolite_nadp_rheostatbiocrnpyler_66442*molecule_g3p_rheostatbiocrnpyler_66442*molecule_g3p_rheostatbiocrnpyler_66442" />
+<reaction text= "enzyme_mGapDH_rheostatbiocrnpyler_66442 + P_vire2biocrnpyler_395564_1_combined + metabolite_nadp_rheostatbiocrnpyler_66442 + metabolite_nadp_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 -- complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_41" species="enzyme_mGapDH_rheostatbiocrnpyler_66442*P_vire2biocrnpyler_395564_1_combined*metabolite_nadp_rheostatbiocrnpyler_66442*metabolite_nadp_rheostatbiocrnpyler_66442*molecule_g3p_rheostatbiocrnpyler_66442*molecule_g3p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_rheostatbiocrnpyler_66442 -- enzyme_mGapDH_rheostatbiocrnpyler_66442 + P_vire2biocrnpyler_72951_1_combined + metabolite_nadp_rheostatbiocrnpyler_66442 + metabolite_nadp_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 ">
+<reaction text= "complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_rheostatbiocrnpyler_66442 -- enzyme_mGapDH_rheostatbiocrnpyler_66442 + P_vire2biocrnpyler_395564_1_combined + metabolite_nadp_rheostatbiocrnpyler_66442 + metabolite_nadp_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 + molecule_g3p_rheostatbiocrnpyler_66442 ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_42" species="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
@@ -425,11 +425,11 @@
 	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_45" species="enzyme_mGapDH_rheostatbiocrnpyler_66442*molecule_13bpg_rheostatbiocrnpyler_66442*metabolite_nadph_rheostatbiocrnpyler_66442*metabolite_nadph_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_pgk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined + molecule_13bpg_rheostatbiocrnpyler_66442 -- complex_enzyme_pgk_metabolite_adp_molecule_13bpg_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_46" species="enzyme_pgk_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_72951_1_combined*molecule_13bpg_rheostatbiocrnpyler_66442" />
+<reaction text= "enzyme_pgk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined + molecule_13bpg_rheostatbiocrnpyler_66442 -- complex_enzyme_pgk_metabolite_adp_molecule_13bpg_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_46" species="enzyme_pgk_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_395564_1_combined*molecule_13bpg_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_pgk_metabolite_adp_molecule_13bpg_rheostatbiocrnpyler_66442 -- enzyme_pgk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined + molecule_13bpg_rheostatbiocrnpyler_66442 ">
+<reaction text= "complex_enzyme_pgk_metabolite_adp_molecule_13bpg_rheostatbiocrnpyler_66442 -- enzyme_pgk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined + molecule_13bpg_rheostatbiocrnpyler_66442 ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_47" species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
@@ -437,12 +437,12 @@
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_48" species="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_rheostatbiocrnpyler_66442 -- enzyme_pgk_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined ">
+<reaction text= "complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_rheostatbiocrnpyler_66442 -- enzyme_pgk_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_49" species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_pgk_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined -- complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_50" species="enzyme_pgk_rheostatbiocrnpyler_66442*molecule_3pg_rheostatbiocrnpyler_66442*molecule_3pg_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_72951_1_combined" />
+<reaction text= "enzyme_pgk_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined -- complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_50" species="enzyme_pgk_rheostatbiocrnpyler_66442*molecule_3pg_rheostatbiocrnpyler_66442*molecule_3pg_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_395564_1_combined" />
 	<delay type="none" />
 </reaction>
 <reaction text= "enzyme_pgm_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 + molecule_3pg_rheostatbiocrnpyler_66442 -- complex_enzyme_pgm_2x_molecule_3pg_rheostatbiocrnpyler_66442 ">
@@ -485,11 +485,11 @@
 	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_60" species="enzyme_eno_rheostatbiocrnpyler_66442*molecule_pep_rheostatbiocrnpyler_66442*molecule_pep_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_pyk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined + ADP_vire2biocrnpyler_72951_1_combined + molecule_pep_rheostatbiocrnpyler_66442 + molecule_pep_rheostatbiocrnpyler_66442 -- complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_61" species="enzyme_pyk_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_72951_1_combined*ADP_vire2biocrnpyler_72951_1_combined*molecule_pep_rheostatbiocrnpyler_66442*molecule_pep_rheostatbiocrnpyler_66442" />
+<reaction text= "enzyme_pyk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined + ADP_vire2biocrnpyler_395564_1_combined + molecule_pep_rheostatbiocrnpyler_66442 + molecule_pep_rheostatbiocrnpyler_66442 -- complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_61" species="enzyme_pyk_rheostatbiocrnpyler_66442*ADP_vire2biocrnpyler_395564_1_combined*ADP_vire2biocrnpyler_395564_1_combined*molecule_pep_rheostatbiocrnpyler_66442*molecule_pep_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_rheostatbiocrnpyler_66442 -- enzyme_pyk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_72951_1_combined + ADP_vire2biocrnpyler_72951_1_combined + molecule_pep_rheostatbiocrnpyler_66442 + molecule_pep_rheostatbiocrnpyler_66442 ">
+<reaction text= "complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_rheostatbiocrnpyler_66442 -- enzyme_pyk_rheostatbiocrnpyler_66442 + ADP_vire2biocrnpyler_395564_1_combined + ADP_vire2biocrnpyler_395564_1_combined + molecule_pep_rheostatbiocrnpyler_66442 + molecule_pep_rheostatbiocrnpyler_66442 ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_62" species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
@@ -497,12 +497,12 @@
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_63" species="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_rheostatbiocrnpyler_66442 -- enzyme_pyk_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined + ATP_vire2biocrnpyler_72951_1_combined ">
+<reaction text= "complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_rheostatbiocrnpyler_66442 -- enzyme_pyk_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined + ATP_vire2biocrnpyler_395564_1_combined ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_64" species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_rheostatbiocrnpyler_66442" />
 	<delay type="none" />
 </reaction>
-<reaction text= "enzyme_pyk_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_72951_1_combined + ATP_vire2biocrnpyler_72951_1_combined -- complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_rheostatbiocrnpyler_66442 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_65" species="enzyme_pyk_rheostatbiocrnpyler_66442*molecule_pyruvate_rheostatbiocrnpyler_66442*molecule_pyruvate_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_72951_1_combined*ATP_vire2biocrnpyler_72951_1_combined" />
+<reaction text= "enzyme_pyk_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + ATP_vire2biocrnpyler_395564_1_combined + ATP_vire2biocrnpyler_395564_1_combined -- complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_rheostatbiocrnpyler_66442 ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_65" species="enzyme_pyk_rheostatbiocrnpyler_66442*molecule_pyruvate_rheostatbiocrnpyler_66442*molecule_pyruvate_rheostatbiocrnpyler_66442*ATP_vire2biocrnpyler_395564_1_combined*ATP_vire2biocrnpyler_395564_1_combined" />
 	<delay type="none" />
 </reaction>
 <reaction text= "enzyme_alsS_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 + molecule_pyruvate_rheostatbiocrnpyler_66442 -- complex_enzyme_alsS_2x_molecule_pyruvate_rheostatbiocrnpyler_66442 ">
