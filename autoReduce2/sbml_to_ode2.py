@@ -4,7 +4,7 @@ import sys
 import numpy as np
 
 def sbml_to_ode2(filename):
-    '''A function that takes in an SBML file and returns x,f,P,params_values.
+    '''A function that takes in an SBML file and returns x,f,P,params_values,x_init.
     x is a list of species written as Sympy objects
     f is a list of functions written as Sympy objects
     P is a list of parameters written as Sympy objects
