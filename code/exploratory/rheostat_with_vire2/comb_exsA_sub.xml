@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="combined_model_of__biocrnpyler_715245_biocrnpyler_334638" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="combined_model_of__biocrnpyler_702329_biocrnpyler_334638" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -9,130 +9,129 @@
       </unitDefinition>
     </listOfUnitDefinitions>
     <listOfCompartments>
-      <compartment id="default_virE2biocrnpyler_715245_combined" name="default" spatialDimensions="3" size="2e-06" constant="true"/>
+      <compartment id="default_exsAbiocrnpyler_702329_combined" name="default" spatialDimensions="3" size="2e-06" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="dna_g_virE2biocrnpyler_715245" name="dna_g" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="tetR_virE2biocrnpyler_715245" name="tetR" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="rna_g_virE2biocrnpyler_715245" name="rna_g" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="VirE2_f_virE2biocrnpyler_715245" name="VirE2_f" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="atc_i_virE2biocrnpyler_715245" name="atc_i" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_atc_i_tetR_virE2biocrnpyler_715245" name="complex_atc_i_tetR" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="VirE2_b_virE2biocrnpyler_715245" name="VirE2_b" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_g_tetR_virE2biocrnpyler_715245" name="complex_dna_g_tetR" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_atc_i_dna_g_tetR_virE2biocrnpyler_715245" name="complex_atc_i_dna_g_tetR" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_hex_ATP_rheostatbiocrnpyler_334638" name="enzyme_hex" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ATP_virE2biocrnpyler_715245_1_combined" name="ATP" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_glucose_ATP_rheostatbiocrnpyler_334638" name="molecule_glucose" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_g6p_ATP_rheostatbiocrnpyler_334638" name="molecule_g6p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="ADP_virE2biocrnpyler_715245_1_combined" name="ADP" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_hex_metabolite_atp_molecule_glucose" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_hex_metabolite_adp_molecule_g6p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_pgi_ATP_rheostatbiocrnpyler_334638" name="enzyme_pgi" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_f6p_ATP_rheostatbiocrnpyler_334638" name="molecule_f6p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgi_molecule_g6p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pgi_molecule_f6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgi_molecule_f6p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_pfk_ATP_rheostatbiocrnpyler_334638" name="enzyme_pfk" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_f16p_ATP_rheostatbiocrnpyler_334638" name="molecule_f16p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pfk_metabolite_atp_molecule_f6p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pfk_metabolite_adp_molecule_f16p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_ald_tpi_ATP_rheostatbiocrnpyler_334638" name="enzyme_ald_tpi" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="molecule_g3p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_ald_tpi_molecule_f16p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_ald_tpi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_ald_tpi_2x_molecule_g3p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_gapN_ATP_rheostatbiocrnpyler_334638" name="enzyme_gapN" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="metabolite_nadp_ATP_rheostatbiocrnpyler_334638" name="metabolite_nadp" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="molecule_3pg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="metabolite_nadph_ATP_rheostatbiocrnpyler_334638" name="metabolite_nadph" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_mGapDH_ATP_rheostatbiocrnpyler_334638" name="enzyme_mGapDH" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="P_virE2biocrnpyler_715245_1_combined" name="P" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_13bpg_ATP_rheostatbiocrnpyler_334638" name="molecule_13bpg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_pgk_ATP_rheostatbiocrnpyler_334638" name="enzyme_pgk" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_pgm_ATP_rheostatbiocrnpyler_334638" name="enzyme_pgm" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_2pg_ATP_rheostatbiocrnpyler_334638" name="molecule_2pg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgm_2x_molecule_3pg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pgm_2x_molecule_2pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgm_2x_molecule_2pg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_eno_ATP_rheostatbiocrnpyler_334638" name="enzyme_eno" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_pep_ATP_rheostatbiocrnpyler_334638" name="molecule_pep" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_eno_2x_molecule_2pg" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_eno_2x_molecule_pep_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_eno_2x_molecule_pep" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_pyk_ATP_rheostatbiocrnpyler_334638" name="enzyme_pyk" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" name="molecule_pyruvate" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_alsS_ATP_rheostatbiocrnpyler_334638" name="enzyme_alsS" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_acetolac_ATP_rheostatbiocrnpyler_334638" name="molecule_acetolac" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_alsS_2x_molecule_pyruvate" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_alsS_molecule_acetolac_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_alsS_molecule_acetolac" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_IlvC_ATP_rheostatbiocrnpyler_334638" name="enzyme_IlvC" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_23dih3mebut_ATP_rheostatbiocrnpyler_334638" name="molecule_23dih3mebut" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_IlvD_ATP_rheostatbiocrnpyler_334638" name="enzyme_IlvD" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_3me2oxo_ATP_rheostatbiocrnpyler_334638" name="molecule_3me2oxo" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvD_molecule_23dih3mebut" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_IlvD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvD_molecule_3me2oxo" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_kivD_ATP_rheostatbiocrnpyler_334638" name="enzyme_kivD" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_isobutanal_ATP_rheostatbiocrnpyler_334638" name="molecule_isobutanal" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_kivD_molecule_3me2oxo" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_kivD_molecule_isobutanal_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_kivD_molecule_isobutanal" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_yahk_ATP_rheostatbiocrnpyler_334638" name="enzyme_yahk" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="molecule_isobutanol_ATP_rheostatbiocrnpyler_334638" name="molecule_isobutanol" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="enzyme_atp_use_ATP_rheostatbiocrnpyler_334638" name="enzyme_atp_use" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_atp_use_metabolite_atp_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_atp_use_metabolite_atp" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_enzyme_atp_use_metabolite_adp_metabolite_pi_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_atp_use_metabolite_adp_metabolite_pi" compartment="default_virE2biocrnpyler_715245_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_f_exsAbiocrnpyler_702329" name="dna_f" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="tetR_exsAbiocrnpyler_702329" name="tetR" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="rna_f_exsAbiocrnpyler_702329" name="rna_f" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="exsA_exsAbiocrnpyler_702329" name="exsA" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="atc_i_exsAbiocrnpyler_702329" name="atc_i" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_atc_i_tetR_exsAbiocrnpyler_702329" name="complex_atc_i_tetR" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_f_tetR_exsAbiocrnpyler_702329" name="complex_dna_f_tetR" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_atc_i_dna_f_tetR_exsAbiocrnpyler_702329" name="complex_atc_i_dna_f_tetR" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_hex_ATP_rheostatbiocrnpyler_334638" name="enzyme_hex" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATP_exsAbiocrnpyler_702329_1_combined" name="ATP" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_glucose_ATP_rheostatbiocrnpyler_334638" name="molecule_glucose" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_g6p_ATP_rheostatbiocrnpyler_334638" name="molecule_g6p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ADP_exsAbiocrnpyler_702329_1_combined" name="ADP" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_hex_metabolite_atp_molecule_glucose_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_hex_metabolite_atp_molecule_glucose" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_hex_metabolite_adp_molecule_g6p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgi_ATP_rheostatbiocrnpyler_334638" name="enzyme_pgi" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_f6p_ATP_rheostatbiocrnpyler_334638" name="molecule_f6p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgi_molecule_g6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgi_molecule_g6p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgi_molecule_f6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgi_molecule_f6p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pfk_ATP_rheostatbiocrnpyler_334638" name="enzyme_pfk" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_f16p_ATP_rheostatbiocrnpyler_334638" name="molecule_f16p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pfk_metabolite_atp_molecule_f6p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pfk_metabolite_atp_molecule_f6p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pfk_metabolite_adp_molecule_f16p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_ald_tpi_ATP_rheostatbiocrnpyler_334638" name="enzyme_ald_tpi" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="molecule_g3p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_ald_tpi_molecule_f16p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_ald_tpi_molecule_f16p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_ald_tpi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_ald_tpi_2x_molecule_g3p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_gapN_ATP_rheostatbiocrnpyler_334638" name="enzyme_gapN" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_nadp_ATP_rheostatbiocrnpyler_334638" name="metabolite_nadp" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="molecule_3pg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_nadph_ATP_rheostatbiocrnpyler_334638" name="metabolite_nadph" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_gapN_2x_metabolite_nadp_2x_molecule_g3p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_gapN_2x_metabolite_nadph_2x_molecule_3pg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_mGapDH_ATP_rheostatbiocrnpyler_334638" name="enzyme_mGapDH" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P_exsAbiocrnpyler_702329_1_combined" name="P" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_13bpg_ATP_rheostatbiocrnpyler_334638" name="molecule_13bpg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_mGapDH_2x_metabolite_nadp_metabolite_pi_2x_molecule_g3p" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_mGapDH_2x_metabolite_nadph_molecule_13bpg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgk_ATP_rheostatbiocrnpyler_334638" name="enzyme_pgk" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgk_metabolite_adp_molecule_13bpg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgk_metabolite_adp_molecule_13bpg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pgm_ATP_rheostatbiocrnpyler_334638" name="enzyme_pgm" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_2pg_ATP_rheostatbiocrnpyler_334638" name="molecule_2pg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgm_2x_molecule_3pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgm_2x_molecule_3pg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pgm_2x_molecule_2pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pgm_2x_molecule_2pg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_eno_ATP_rheostatbiocrnpyler_334638" name="enzyme_eno" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_pep_ATP_rheostatbiocrnpyler_334638" name="molecule_pep" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_eno_2x_molecule_2pg_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_eno_2x_molecule_2pg" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_eno_2x_molecule_pep_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_eno_2x_molecule_pep" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_pyk_ATP_rheostatbiocrnpyler_334638" name="enzyme_pyk" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" name="molecule_pyruvate" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pyk_2x_metabolite_adp_2x_molecule_pep" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_alsS_ATP_rheostatbiocrnpyler_334638" name="enzyme_alsS" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_acetolac_ATP_rheostatbiocrnpyler_334638" name="molecule_acetolac" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_alsS_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_alsS_2x_molecule_pyruvate" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_alsS_molecule_acetolac_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_alsS_molecule_acetolac" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_IlvC_ATP_rheostatbiocrnpyler_334638" name="enzyme_IlvC" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_23dih3mebut_ATP_rheostatbiocrnpyler_334638" name="molecule_23dih3mebut" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvC_metabolite_nadph_molecule_acetolac" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvC_metabolite_nadp_molecule_23dih3mebut" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_IlvD_ATP_rheostatbiocrnpyler_334638" name="enzyme_IlvD" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_3me2oxo_ATP_rheostatbiocrnpyler_334638" name="molecule_3me2oxo" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvD_molecule_23dih3mebut_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvD_molecule_23dih3mebut" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_IlvD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_IlvD_molecule_3me2oxo" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_kivD_ATP_rheostatbiocrnpyler_334638" name="enzyme_kivD" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_isobutanal_ATP_rheostatbiocrnpyler_334638" name="molecule_isobutanal" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_kivD_molecule_3me2oxo_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_kivD_molecule_3me2oxo" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_kivD_molecule_isobutanal_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_kivD_molecule_isobutanal" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_yahk_ATP_rheostatbiocrnpyler_334638" name="enzyme_yahk" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="molecule_isobutanol_ATP_rheostatbiocrnpyler_334638" name="molecule_isobutanol" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_yahk_metabolite_nadph_molecule_isobutanal" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_yahk_metabolite_nadp_molecule_isobutanol" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="enzyme_atp_use_ATP_rheostatbiocrnpyler_334638" name="enzyme_atp_use" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_atp_use_metabolite_atp_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_atp_use_metabolite_atp" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_enzyme_atp_use_metabolite_adp_metabolite_pi_ATP_rheostatbiocrnpyler_334638" name="complex_enzyme_atp_use_metabolite_adp_metabolite_pi" compartment="default_exsAbiocrnpyler_702329_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfReactions>
-      <reaction id="r0_virE2biocrnpyler_715245" name="r0" reversible="false">
+      <reaction id="r0_exsAbiocrnpyler_702329" name="r0" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.0002  </PropensityType>
+          <PropensityType> type=massaction k=2e-05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="atc_i_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_atc_i_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> atc_i_virE2biocrnpyler_715245 </ci>
-              <ci> tetR_virE2biocrnpyler_715245 </ci>
+              <ci> atc_i_exsAbiocrnpyler_702329 </ci>
+              <ci> tetR_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.0002"/>
+            <localParameter id="k" value="2e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r0_1_virE2biocrnpyler_715245" name="r0_1" reversible="false">
+      <reaction id="r0_1_exsAbiocrnpyler_702329" name="r0_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=2e-09  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_atc_i_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="atc_i_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_atc_i_tetR_virE2biocrnpyler_715245 </ci>
+              <ci> complex_atc_i_tetR_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -140,48 +139,48 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r2_virE2biocrnpyler_715245" name="r2" reversible="false">
+      <reaction id="r2_exsAbiocrnpyler_702329" name="r2" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=4e-05  </PropensityType>
+          <PropensityType> type=massaction k=4e-07  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_g_virE2biocrnpyler_715245 </ci>
-              <ci> tetR_virE2biocrnpyler_715245 </ci>
+              <ci> dna_f_exsAbiocrnpyler_702329 </ci>
+              <ci> tetR_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="4e-05"/>
+            <localParameter id="k" value="4e-07"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r2_1_virE2biocrnpyler_715245" name="r2_1" reversible="false">
+      <reaction id="r2_1_exsAbiocrnpyler_702329" name="r2_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=1e-12  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_g_tetR_virE2biocrnpyler_715245 </ci>
+              <ci> complex_dna_f_tetR_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -189,48 +188,48 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r4_virE2biocrnpyler_715245" name="r4" reversible="false">
+      <reaction id="r4_exsAbiocrnpyler_702329" name="r4" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=6e-06  </PropensityType>
+          <PropensityType> type=massaction k=6e-08  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="atc_i_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_atc_i_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_dna_g_tetR_virE2biocrnpyler_715245 </ci>
-              <ci> atc_i_virE2biocrnpyler_715245 </ci>
+              <ci> complex_dna_f_tetR_exsAbiocrnpyler_702329 </ci>
+              <ci> atc_i_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="6e-06"/>
+            <localParameter id="k" value="6e-08"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r4_1_virE2biocrnpyler_715245" name="r4_1" reversible="false">
+      <reaction id="r4_1_exsAbiocrnpyler_702329" name="r4_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=3e-09  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_atc_i_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="atc_i_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="atc_i_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_atc_i_dna_g_tetR_virE2biocrnpyler_715245 </ci>
+              <ci> complex_atc_i_dna_f_tetR_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -238,48 +237,48 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r6_virE2biocrnpyler_715245" name="r6" reversible="false">
+      <reaction id="r6_exsAbiocrnpyler_702329" name="r6" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.005  </PropensityType>
+          <PropensityType> type=massaction k=5e-05  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="complex_atc_i_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="complex_atc_i_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> complex_atc_i_dna_g_tetR_virE2biocrnpyler_715245 </ci>
+              <ci> complex_atc_i_dna_f_tetR_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.005"/>
+            <localParameter id="k" value="5e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r6_1_virE2biocrnpyler_715245" name="r6_1" reversible="false">
+      <reaction id="r6_1_exsAbiocrnpyler_702329" name="r6_1" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=1e-10  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="complex_atc_i_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="complex_atc_i_dna_g_tetR_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="complex_atc_i_dna_f_tetR_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_g_virE2biocrnpyler_715245 </ci>
-              <ci> complex_atc_i_tetR_virE2biocrnpyler_715245 </ci>
+              <ci> dna_f_exsAbiocrnpyler_702329 </ci>
+              <ci> complex_atc_i_tetR_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -287,43 +286,43 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r8_virE2biocrnpyler_715245" name="r8" reversible="false">
+      <reaction id="r8_exsAbiocrnpyler_702329" name="r8" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=0.0031875  </PropensityType>
+          <PropensityType> type=massaction k=0.001875  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="rna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_g_virE2biocrnpyler_715245 </ci>
+              <ci> dna_f_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.0031875"/>
+            <localParameter id="k" value="0.001875"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r9_virE2biocrnpyler_715245" name="r9" reversible="false">
+      <reaction id="r9_exsAbiocrnpyler_702329" name="r9" reversible="false">
         <annotation>
-          <PropensityType> type=proportionalhillpositive k=0.001 K=1 n=1 s1=ATP_virE2biocrnpyler_715245_1_combined d=rna_g_virE2biocrnpyler_715245  </PropensityType>
+          <PropensityType> type=proportionalhillpositive k=0.0007 K=1 n=1 s1=ATP_exsAbiocrnpyler_702329_1_combined d=rna_f_exsAbiocrnpyler_702329  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="rna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="rna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
-          <speciesReference species="VirE2_f_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-          <speciesReference species="P_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="exsA_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -332,10 +331,10 @@
               <apply>
                 <times/>
                 <ci> k </ci>
-                <ci> rna_g_virE2biocrnpyler_715245 </ci>
+                <ci> rna_f_exsAbiocrnpyler_702329 </ci>
                 <apply>
                   <power/>
-                  <ci> ATP_virE2biocrnpyler_715245_1_combined </ci>
+                  <ci> ATP_exsAbiocrnpyler_702329_1_combined </ci>
                   <ci> n </ci>
                 </apply>
               </apply>
@@ -343,7 +342,7 @@
                 <plus/>
                 <apply>
                   <power/>
-                  <ci> ATP_virE2biocrnpyler_715245_1_combined </ci>
+                  <ci> ATP_exsAbiocrnpyler_702329_1_combined </ci>
                   <ci> n </ci>
                 </apply>
                 <ci> K </ci>
@@ -351,86 +350,29 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="0.001"/>
+            <localParameter id="k" value="0.0007"/>
             <localParameter id="n" value="1"/>
             <localParameter id="K" value="1"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r10_virE2biocrnpyler_715245" name="r10" reversible="false">
-        <annotation>
-          <PropensityType> type=proportionalhillnegative k=0.0005 K=1 n=1 s1=VirE2_b_virE2biocrnpyler_715245 d=VirE2_f_virE2biocrnpyler_715245  </PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="VirE2_f_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="VirE2_b_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <divide/>
-              <apply>
-                <times/>
-                <ci> k </ci>
-                <ci> VirE2_f_virE2biocrnpyler_715245 </ci>
-              </apply>
-              <apply>
-                <plus/>
-                <apply>
-                  <power/>
-                  <ci> VirE2_b_virE2biocrnpyler_715245 </ci>
-                  <ci> n </ci>
-                </apply>
-                <ci> K </ci>
-              </apply>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.0005"/>
-            <localParameter id="n" value="1"/>
-            <localParameter id="K" value="1"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r11_virE2biocrnpyler_715245" name="r11" reversible="false">
+      <reaction id="r10_exsAbiocrnpyler_702329" name="r10" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=0.001  </PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="rna_g_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_f_exsAbiocrnpyler_702329" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> rna_g_virE2biocrnpyler_715245 </ci>
+              <ci> rna_f_exsAbiocrnpyler_702329 </ci>
             </apply>
           </math>
           <listOfLocalParameters>
             <localParameter id="k" value="0.001"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r12_virE2biocrnpyler_715245" name="r12" reversible="false">
-        <annotation>
-          <PropensityType> type=massaction k=1e-05  </PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="VirE2_f_virE2biocrnpyler_715245" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> VirE2_f_virE2biocrnpyler_715245 </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="1e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
@@ -440,7 +382,7 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_glucose_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
@@ -452,7 +394,7 @@
               <times/>
               <ci> k </ci>
               <ci> enzyme_hex_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> ATP_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ATP_exsAbiocrnpyler_702329_1_combined </ci>
               <ci> molecule_glucose_ATP_rheostatbiocrnpyler_334638 </ci>
             </apply>
           </math>
@@ -470,7 +412,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_glucose_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -519,7 +461,7 @@
         <listOfProducts>
           <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_g6p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -541,7 +483,7 @@
         <listOfReactants>
           <speciesReference species="enzyme_hex_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_g6p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="complex_enzyme_hex_metabolite_adp_molecule_g6p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
@@ -553,7 +495,7 @@
               <ci> k </ci>
               <ci> enzyme_hex_ATP_rheostatbiocrnpyler_334638 </ci>
               <ci> molecule_g6p_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> ADP_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ADP_exsAbiocrnpyler_702329_1_combined </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -688,7 +630,7 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_f6p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
@@ -700,7 +642,7 @@
               <times/>
               <ci> k </ci>
               <ci> enzyme_pfk_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> ATP_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ATP_exsAbiocrnpyler_702329_1_combined </ci>
               <ci> molecule_f6p_ATP_rheostatbiocrnpyler_334638 </ci>
             </apply>
           </math>
@@ -718,7 +660,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_f6p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -767,7 +709,7 @@
         <listOfProducts>
           <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_f16p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -789,7 +731,7 @@
         <listOfReactants>
           <speciesReference species="enzyme_pfk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_f16p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="complex_enzyme_pfk_metabolite_adp_molecule_f16p_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
@@ -801,7 +743,7 @@
               <ci> k </ci>
               <ci> enzyme_pfk_ATP_rheostatbiocrnpyler_334638 </ci>
               <ci> molecule_f16p_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> ADP_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ADP_exsAbiocrnpyler_702329_1_combined </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1083,7 +1025,7 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_mGapDH_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="P_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
           <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
         </listOfReactants>
@@ -1096,7 +1038,7 @@
               <times/>
               <ci> k </ci>
               <ci> enzyme_mGapDH_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> P_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> P_exsAbiocrnpyler_702329_1_combined </ci>
               <apply>
                 <power/>
                 <ci> metabolite_nadp_ATP_rheostatbiocrnpyler_334638 </ci>
@@ -1123,7 +1065,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="enzyme_mGapDH_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="P_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="metabolite_nadp_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
           <speciesReference species="molecule_g3p_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
         </listOfProducts>
@@ -1225,7 +1167,7 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_13bpg_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
@@ -1237,7 +1179,7 @@
               <times/>
               <ci> k </ci>
               <ci> enzyme_pgk_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> ADP_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ADP_exsAbiocrnpyler_702329_1_combined </ci>
               <ci> molecule_13bpg_ATP_rheostatbiocrnpyler_334638 </ci>
             </apply>
           </math>
@@ -1255,7 +1197,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_13bpg_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -1304,7 +1246,7 @@
         <listOfProducts>
           <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1326,7 +1268,7 @@
         <listOfReactants>
           <speciesReference species="enzyme_pgk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_3pg_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="complex_enzyme_pgk_metabolite_atp_2x_molecule_3pg_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
@@ -1342,7 +1284,7 @@
                 <ci> molecule_3pg_ATP_rheostatbiocrnpyler_334638 </ci>
                 <cn type="integer"> 2 </cn>
               </apply>
-              <ci> ATP_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ATP_exsAbiocrnpyler_702329_1_combined </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -1614,7 +1556,7 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="2" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="2" constant="false"/>
           <speciesReference species="molecule_pep_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
         </listOfReactants>
         <listOfProducts>
@@ -1628,7 +1570,7 @@
               <ci> enzyme_pyk_ATP_rheostatbiocrnpyler_334638 </ci>
               <apply>
                 <power/>
-                <ci> ADP_virE2biocrnpyler_715245_1_combined </ci>
+                <ci> ADP_exsAbiocrnpyler_702329_1_combined </ci>
                 <cn type="integer"> 2 </cn>
               </apply>
               <apply>
@@ -1652,7 +1594,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="2" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="2" constant="false"/>
           <speciesReference species="molecule_pep_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
         </listOfProducts>
         <kineticLaw>
@@ -1701,7 +1643,7 @@
         <listOfProducts>
           <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="2" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="2" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1723,7 +1665,7 @@
         <listOfReactants>
           <speciesReference species="enzyme_pyk_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
           <speciesReference species="molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" stoichiometry="2" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="2" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="2" constant="false"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="complex_enzyme_pyk_2x_metabolite_atp_2x_molecule_pyruvate_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
@@ -1741,7 +1683,7 @@
               </apply>
               <apply>
                 <power/>
-                <ci> ATP_virE2biocrnpyler_715245_1_combined </ci>
+                <ci> ATP_exsAbiocrnpyler_702329_1_combined </ci>
                 <cn type="integer"> 2 </cn>
               </apply>
             </apply>
@@ -2378,7 +2320,7 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_atp_use_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="complex_enzyme_atp_use_metabolite_atp_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
@@ -2389,7 +2331,7 @@
               <times/>
               <ci> k </ci>
               <ci> enzyme_atp_use_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> ATP_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ATP_exsAbiocrnpyler_702329_1_combined </ci>
             </apply>
           </math>
           <listOfLocalParameters>
@@ -2406,7 +2348,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="enzyme_atp_use_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ATP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ATP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2453,8 +2395,8 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="enzyme_atp_use_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
-          <speciesReference species="P_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2475,8 +2417,8 @@
         </annotation>
         <listOfReactants>
           <speciesReference species="enzyme_atp_use_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
-          <speciesReference species="ADP_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
-          <speciesReference species="P_virE2biocrnpyler_715245_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="ADP_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="P_exsAbiocrnpyler_702329_1_combined" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="complex_enzyme_atp_use_metabolite_adp_metabolite_pi_ATP_rheostatbiocrnpyler_334638" stoichiometry="1" constant="false"/>
@@ -2487,8 +2429,8 @@
               <times/>
               <ci> k </ci>
               <ci> enzyme_atp_use_ATP_rheostatbiocrnpyler_334638 </ci>
-              <ci> ADP_virE2biocrnpyler_715245_1_combined </ci>
-              <ci> P_virE2biocrnpyler_715245_1_combined </ci>
+              <ci> ADP_exsAbiocrnpyler_702329_1_combined </ci>
+              <ci> P_exsAbiocrnpyler_702329_1_combined </ci>
             </apply>
           </math>
           <listOfLocalParameters>

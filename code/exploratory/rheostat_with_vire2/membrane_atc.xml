@@ -22,8 +22,8 @@
       <species id="atc_i" name="atc_i" compartment="internal" initialConcentration="0" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="kb" name="kb" value="0.2" units="per_second" constant="false"/>
-      <parameter id="kd" name="kd" value="0.01" units="per_second" constant="false"/>
+      <parameter id="kb" name="kb" value="0.002" units="per_second" constant="false"/>
+      <parameter id="kd" name="kd" value="1e-05" units="per_second" constant="false"/>
     </listOfParameters>
     <listOfReactions>
       <reaction id="r1" reversible="true">
