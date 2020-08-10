@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
-  <model substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="biocrnpyler_76734" name="biocrnpyler_76734" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -9,268 +9,34 @@
       </unitDefinition>
     </listOfUnitDefinitions>
     <listOfCompartments>
-      <compartment id="default" spatialDimensions="3" size="1e-06" constant="true"/>
+      <compartment id="default" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="protein_LacI" name="protein_LacI" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_lacI_rfp" name="dna_lacI_rfp" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RFP" name="protein_RFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="rna_lacI_rfp" name="rna_lacI_rfp" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_pConst" name="dna_pConst" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="rna_pConst" name="rna_pConst" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_GFP" name="dna_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_GFP" name="protein_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfReactions>
-      <reaction id="r0" reversible="false" fast="false">
+      <reaction id="r0" name="r0" reversible="false">
         <annotation>
-          <PropensityType> type=proportionalhillnegative k=0.01875 K=10.0 n=2.0 s1=protein_LacI d=dna_lacI_rfp</PropensityType>
+          <PropensityType> type=massaction k=0.28125</PropensityType>
         </annotation>
         <listOfReactants>
-          <speciesReference species="dna_lacI_rfp" stoichiometry="1" constant="false"/>
+          <speciesReference species="dna_GFP" stoichiometry="1" constant="false"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="dna_lacI_rfp" constant="false"/>
-          <speciesReference species="rna_lacI_rfp" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <divide/>
-              <apply>
-                <times/>
-                <ci> k </ci>
-                <ci> dna_lacI_rfp </ci>
-              </apply>
-              <apply>
-                <plus/>
-                <apply>
-                  <power/>
-                  <ci> protein_LacI </ci>
-                  <ci> n </ci>
-                </apply>
-                <ci> K </ci>
-              </apply>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.01875"/>
-            <localParameter id="n" value="2"/>
-            <localParameter id="K" value="10"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r1" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=1e-06</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="dna_lacI_rfp" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="dna_lacI_rfp" constant="false"/>
-          <speciesReference species="rna_lacI_rfp" constant="false"/>
+          <speciesReference species="dna_GFP" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_GFP" stoichiometry="1" constant="false"/>
         </listOfProducts>
         <kineticLaw>
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <apply>
               <times/>
               <ci> k </ci>
-              <ci> dna_lacI_rfp </ci>
+              <ci> dna_GFP </ci>
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="1e-06"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r2" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.15</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rna_lacI_rfp" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="rna_lacI_rfp" constant="false"/>
-          <speciesReference species="protein_RFP" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> rna_lacI_rfp </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.15"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r3" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.1875</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="dna_pConst" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="dna_pConst" constant="false"/>
-          <speciesReference species="rna_pConst" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> dna_pConst </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.1875"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r4" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.15</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rna_pConst" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="rna_pConst" constant="false"/>
-          <speciesReference species="protein_LacI" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> rna_pConst </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.15"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r5" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.001</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="protein_LacI" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> protein_LacI </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.001"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r6" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.001</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="protein_RFP" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> protein_RFP </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.001"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r7" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.001</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rna_lacI_rfp" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> rna_lacI_rfp </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.001"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r8" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.001</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rna_pConst" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> rna_pConst </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.001"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r9" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.002</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rna_lacI_rfp" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> rna_lacI_rfp </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.002"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
-      <reaction id="r10" reversible="false" fast="false">
-        <annotation>
-          <PropensityType> type=massaction k=0.002</PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="rna_pConst" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> rna_pConst </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="0.002"/>
+            <localParameter id="k" value="0.28125"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>

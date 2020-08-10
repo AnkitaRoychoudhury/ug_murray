@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="biocrnpyler_232763" name="biocrnpyler_232763" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="biocrnpyler_732909" name="biocrnpyler_732909" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -12,15 +12,15 @@
       <compartment id="default" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
-      <species id="protein_RNAase" name="protein_RNAase" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="complex_dna_GFP_protein_RNAP" name="complex_dna_GFP_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_Ribo" name="protein_Ribo" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_GFP" name="protein_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="dna_GFP" name="dna_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAP" name="protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="rna_GFP" name="rna_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_protein_RNAase_rna_GFP" name="complex_protein_RNAase_rna_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="protein_RNAP" name="protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_GFP" name="dna_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_GFP_protein_RNAP" name="complex_dna_GFP_protein_RNAP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="complex_protein_Ribo_rna_GFP" name="complex_protein_Ribo_rna_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_GFP" name="protein_GFP" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAase" name="protein_RNAase" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_Ribo" name="protein_Ribo" compartment="default" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfReactions>
       <reaction id="r0" name="r0" reversible="false">

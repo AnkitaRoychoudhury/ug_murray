@@ -8,11 +8,12 @@ mechanism_id	part_id	param_name	param_val	comments
 	e coli extract 2	Ribo	12	
 	e coli extract 2	RNAP	6	
 	e coli extract 2	RNAase	3	
-		ktx	0.05	transcripts / second per polymerase assuming 50nt/s and transcript length of 1000
+		 ktx	0.05	transcripts / second per polymerase assuming 50nt/s and transcript length of 1000
+ 		ktx	0.05	transcripts / second per polymerase assuming 50nt/s and transcript length of 100
 		ktl	0.05	proteins / second per ribosome assuming 15aa/s and protein length of 300
 		cooperativity	2	Seems like a good default
 		kb	100	assuming 10ms to diffuse across 1um (characteristic cell size)
-		ku	10	"""9s0% binding"""
+		ku	10	"""90% binding"""
 		kdil	0.001	assuming half life of ~20 minutes for everything (e coli doubling time)
 rna_degredation_mm		kdeg	0.000555556	assuming a half life of ~10 minutes for mRNA and 30uM of RNAase
 rna_degredation		kdil	0.002	assuming a half life of ~10 minutes for mRNA
@@ -41,8 +42,5 @@ simple_transcription	J23100	ktx	0.4775625	Above rescaled by ktx for simple trans
 simple_translation	BCD2	ktl	3	Above rescaled by ktl for simple translation
 simple_translation	BCD8	ktl	0.15	Above rescaled by ktl for simple translation
 simple_translation	BCD12	ktl	0.3	Above rescaled by ktl for simple translation
-transcription_mm	P	ktx	0.1875	d
 transcription_mm	P	ktx	0.1875	
-
-
 
