@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="combined_model_of__combined_model_of__biocrnpyler_364059_biocrnpyler_203770_biocrnpyler_621952" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+    <listOfUnitDefinitions>
+      <unitDefinition id="square_metre">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" name="default" spatialDimensions="3" size="3e-06" constant="true"/>
+      <compartment id="default_atpsynthesisbiocrnpyler_621952" name="default" spatialDimensions="3" size="1e-06" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059" name="protein_Ribo_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" name="rna_atpsyn" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059" name="protein_RNAase_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_atpsyn_atpsyn_txtlbiocrnpyler_364059" name="dna_atpsyn" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" name="complex_protein_Ribo_rna_atpsyn_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" name="protein_RNAP_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" name="complex_protein_RNAase_rna_atpsyn_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_atpsyn_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" name="complex_dna_atpsyn_protein_RNAP_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" name="rna_cellular_processes" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_dna_cellular_processes_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" name="complex_dna_cellular_processes_protein_RNAP_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="dna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" name="dna_cellular_processes" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_RNAase_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" name="complex_protein_RNAase_rna_cellular_processes_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="complex_protein_Ribo_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" name="complex_protein_Ribo_rna_cellular_processes_machinery" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_cellular_processes_atpsyn_txtlbiocrnpyler_364059" name="protein_cellular_processes" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined" name="protein_atpsyn" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="protein_atpsyn_b_atpsyn_mibiocrnpyler_203770" name="protein_atpsyn_b" compartment="default_atpsyn_txtlbiocrnpyler_364059_combined_combined" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="proton_outside_H_atpsynthesisbiocrnpyler_621952" name="proton_outside_H" compartment="default_atpsynthesisbiocrnpyler_621952" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="proton_inside_H_atpsynthesisbiocrnpyler_621952" name="proton_inside_H" compartment="default_atpsynthesisbiocrnpyler_621952" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_adp_atpsynthesisbiocrnpyler_621952" name="metabolite_adp" compartment="default_atpsynthesisbiocrnpyler_621952" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_atp_atpsynthesisbiocrnpyler_621952" name="metabolite_atp" compartment="default_atpsynthesisbiocrnpyler_621952" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_pi_atpsynthesisbiocrnpyler_621952" name="metabolite_pi" compartment="default_atpsynthesisbiocrnpyler_621952" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r0_atpsyn_txtlbiocrnpyler_364059" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=100.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_atpsyn_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_atpsyn_atpsyn_txtlbiocrnpyler_364059 </ci>
+              <ci> protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="100"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_1_atpsyn_txtlbiocrnpyler_364059" name="r0_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=10.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_atpsyn_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_atpsyn_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2_atpsyn_txtlbiocrnpyler_364059" name="r2" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.05  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_atpsyn_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_atpsyn_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.05"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_atpsyn_txtlbiocrnpyler_364059" name="r3" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=100.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_protein_Ribo_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_atpsyn_atpsyn_txtlbiocrnpyler_364059 </ci>
+              <ci> protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="100"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3_1_atpsyn_txtlbiocrnpyler_364059" name="r3_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=10.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_Ribo_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_Ribo_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r5_atpsyn_txtlbiocrnpyler_364059" name="r5" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.05  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_Ribo_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_Ribo_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.05"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r6_atpsyn_txtlbiocrnpyler_364059" name="r6" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=100.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_protein_RNAase_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_atpsyn_atpsyn_txtlbiocrnpyler_364059 </ci>
+              <ci> protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="100"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r6_1_atpsyn_txtlbiocrnpyler_364059" name="r6_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=10.0  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_RNAase_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_RNAase_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r8_atpsyn_txtlbiocrnpyler_364059" name="r8" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_RNAase_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_RNAase_rna_atpsyn_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r9_atpsyn_txtlbiocrnpyler_364059" name="r9" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=500  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="dna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_dna_cellular_processes_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> dna_cellular_processes_atpsyn_txtlbiocrnpyler_364059 </ci>
+              <ci> protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="500"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r9_1_atpsyn_txtlbiocrnpyler_364059" name="r9_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=50  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_cellular_processes_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_cellular_processes_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="50"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r11_atpsyn_txtlbiocrnpyler_364059" name="r11" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.1  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_dna_cellular_processes_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="dna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_dna_cellular_processes_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r12_atpsyn_txtlbiocrnpyler_364059" name="r12" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=500  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_protein_Ribo_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059 </ci>
+              <ci> protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="500"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r12_1_atpsyn_txtlbiocrnpyler_364059" name="r12_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=5  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_Ribo_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_Ribo_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r14_atpsyn_txtlbiocrnpyler_364059" name="r14" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.1  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_Ribo_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_Ribo_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_Ribo_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r15_atpsyn_txtlbiocrnpyler_364059" name="r15" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=500  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="complex_protein_RNAase_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059 </ci>
+              <ci> protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="500"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r15_1_atpsyn_txtlbiocrnpyler_364059" name="r15_1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=50  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_RNAase_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+          <speciesReference species="protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_RNAase_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="50"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r17_atpsyn_txtlbiocrnpyler_364059" name="r17" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="complex_protein_RNAase_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="protein_RNAase_machinery_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> complex_protein_RNAase_rna_cellular_processes_machinery_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r18_atpsyn_txtlbiocrnpyler_364059" name="r18" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_atpsyn_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_atpsyn_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r19_atpsyn_txtlbiocrnpyler_364059" name="r19" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r20_atpsyn_txtlbiocrnpyler_364059" name="r20" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> rna_cellular_processes_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r21_atpsyn_txtlbiocrnpyler_364059" name="r21" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.001  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="protein_cellular_processes_atpsyn_txtlbiocrnpyler_364059" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> protein_cellular_processes_atpsyn_txtlbiocrnpyler_364059 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_atpsyn_mibiocrnpyler_203770" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=1  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="protein_atpsyn_b_atpsyn_mibiocrnpyler_203770" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_atpsynthesisbiocrnpyler_621952" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=2  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="metabolite_adp_atpsynthesisbiocrnpyler_621952" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_pi_atpsynthesisbiocrnpyler_621952" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="metabolite_atp_atpsynthesisbiocrnpyler_621952" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> metabolite_adp_atpsynthesisbiocrnpyler_621952 </ci>
+              <ci> metabolite_pi_atpsynthesisbiocrnpyler_621952 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="2"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r1_atpsynthesisbiocrnpyler_621952" name="r1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=2  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="proton_outside_H_atpsynthesisbiocrnpyler_621952" stoichiometry="4" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="proton_inside_H_atpsynthesisbiocrnpyler_621952" stoichiometry="4" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <apply>
+                <power/>
+                <ci> proton_outside_H_atpsynthesisbiocrnpyler_621952 </ci>
+                <cn type="integer"> 4 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="2"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
