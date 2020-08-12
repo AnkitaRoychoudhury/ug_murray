@@ -15,11 +15,6 @@
 <species name="protein_cellular_processes_atpsyn_txtlbiocrnpyler_364059" value="0.0" />
 <species name="protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined" value="0.0" />
 <species name="protein_atpsyn_b_atpsyn_mibiocrnpyler_203770" value="0.0" />
-<species name="proton_outside_H_atpsynthesisbiocrnpyler_621952" value="10.0" />
-<species name="proton_inside_H_atpsynthesisbiocrnpyler_621952" value="0.0" />
-<species name="metabolite_adp_atpsynthesisbiocrnpyler_621952" value="0.0" />
-<species name="metabolite_atp_atpsynthesisbiocrnpyler_621952" value="10.0" />
-<species name="metabolite_pi_atpsynthesisbiocrnpyler_621952" value="0.0" />
 
 <parameter name="k" value="100.0" />
 <parameter name="k_r0_1_atpsyn_txtlbiocrnpyler_364059" value="10.0" />
@@ -44,8 +39,6 @@
 <parameter name="k_r20_atpsyn_txtlbiocrnpyler_364059" value="0.001" />
 <parameter name="k_r21_atpsyn_txtlbiocrnpyler_364059" value="0.001" />
 <parameter name="k_r0_atpsyn_mibiocrnpyler_203770" value="1.0" />
-<parameter name="k_r0_atpsynthesisbiocrnpyler_621952" value="2.0" />
-<parameter name="k_r1_atpsynthesisbiocrnpyler_621952" value="2.0" />
 <parameter name="DummyVar_BimolecularPropensity_k_0" value="100.0" />
 <parameter name="DummyVar_UnimolecularPropensity_k_1" value="10.0" />
 <parameter name="DummyVar_UnimolecularPropensity_k_2" value="0.05" />
@@ -69,8 +62,6 @@
 <parameter name="DummyVar_UnimolecularPropensity_k_20" value="0.001" />
 <parameter name="DummyVar_UnimolecularPropensity_k_21" value="0.001" />
 <parameter name="DummyVar_UnimolecularPropensity_k_22" value="1.0" />
-<parameter name="DummyVar_BimolecularPropensity_k_23" value="2.0" />
-<parameter name="DummyVar_MassActionPropensity_k_24" value="2.0" />
 
 <reaction text= "dna_atpsyn_atpsyn_txtlbiocrnpyler_364059 + protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 -- complex_dna_atpsyn_protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059 ">
 	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_0" species="dna_atpsyn_atpsyn_txtlbiocrnpyler_364059*protein_RNAP_machinery_atpsyn_txtlbiocrnpyler_364059" />
@@ -162,14 +153,6 @@
 </reaction>
 <reaction text= "protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined -- protein_atpsyn_b_atpsyn_mibiocrnpyler_203770 ">
 	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_22" species="protein_atpsyn_atpsyn_txtlbiocrnpyler_364059_1_combined" />
-	<delay type="none" />
-</reaction>
-<reaction text= "metabolite_adp_atpsynthesisbiocrnpyler_621952 + metabolite_pi_atpsynthesisbiocrnpyler_621952 -- metabolite_atp_atpsynthesisbiocrnpyler_621952 ">
-	<propensity type="massaction" k="DummyVar_BimolecularPropensity_k_23" species="metabolite_adp_atpsynthesisbiocrnpyler_621952*metabolite_pi_atpsynthesisbiocrnpyler_621952" />
-	<delay type="none" />
-</reaction>
-<reaction text= "proton_outside_H_atpsynthesisbiocrnpyler_621952 + proton_outside_H_atpsynthesisbiocrnpyler_621952 + proton_outside_H_atpsynthesisbiocrnpyler_621952 + proton_outside_H_atpsynthesisbiocrnpyler_621952 -- proton_inside_H_atpsynthesisbiocrnpyler_621952 + proton_inside_H_atpsynthesisbiocrnpyler_621952 + proton_inside_H_atpsynthesisbiocrnpyler_621952 + proton_inside_H_atpsynthesisbiocrnpyler_621952 ">
-	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_24" species="proton_outside_H_atpsynthesisbiocrnpyler_621952*proton_outside_H_atpsynthesisbiocrnpyler_621952*proton_outside_H_atpsynthesisbiocrnpyler_621952*proton_outside_H_atpsynthesisbiocrnpyler_621952" />
 	<delay type="none" />
 </reaction>
 
