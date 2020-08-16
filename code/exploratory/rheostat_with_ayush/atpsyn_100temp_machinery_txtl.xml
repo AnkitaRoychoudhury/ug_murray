@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
-  <model id="biocrnpyler_289766" name="biocrnpyler_289766" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+  <model id="biocrnpyler_339038" name="biocrnpyler_339038" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
     <listOfUnitDefinitions>
       <unitDefinition id="square_metre">
         <listOfUnits>
@@ -25,7 +25,7 @@
     <listOfReactions>
       <reaction id="r0" name="r0" reversible="false">
         <annotation>
-          <PropensityType> type=massaction k=100.0</PropensityType>
+          <PropensityType> type=massaction k=4.3859649122807014e-05</PropensityType>
         </annotation>
         <listOfReactants>
           <speciesReference species="dna_atpsyn" stoichiometry="1" constant="false"/>
@@ -44,7 +44,7 @@
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="k" value="100"/>
+            <localParameter id="k" value="4.3859649122807e-05"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
