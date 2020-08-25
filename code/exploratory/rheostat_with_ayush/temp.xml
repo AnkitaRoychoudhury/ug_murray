@@ -41,7 +41,7 @@
       <species id="proton_outside_H_atpsynthesisbiocrnpyler_307087_1_combined" name="proton_outside_H" compartment="default_protontransportbiocrnpyler_987223" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="proton_inside_H_atpsynthesisbiocrnpyler_307087_1_combined" name="proton_inside_H" compartment="default_protontransportbiocrnpyler_987223" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="metabolite_adp_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" name="metabolite_adp" compartment="default_protontransportbiocrnpyler_987223" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="metabolite_atp_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" name="metabolite_atp" compartment="default_protontransportbiocrnpyler_987223" initialAmount="1500000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="metabolite_atp_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" name="metabolite_atp" compartment="default_protontransportbiocrnpyler_987223" initialAmount="10" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="metabolite_pi_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" name="metabolite_pi" compartment="default_protontransportbiocrnpyler_987223" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfReactions>

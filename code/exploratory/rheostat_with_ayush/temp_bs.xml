@@ -19,7 +19,7 @@
 <species name="proton_outside_H_atpsynthesisbiocrnpyler_307087_1_combined" value="10.0" />
 <species name="proton_inside_H_atpsynthesisbiocrnpyler_307087_1_combined" value="0.0" />
 <species name="metabolite_adp_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" value="0.0" />
-<species name="metabolite_atp_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" value="1500000.0" />
+<species name="metabolite_atp_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" value="10.0" />
 <species name="metabolite_pi_atpsynthesisbiocrnpyler_307087_1_combined_1_combined" value="0.0" />
 
 <parameter name="k" value="100.0" />
