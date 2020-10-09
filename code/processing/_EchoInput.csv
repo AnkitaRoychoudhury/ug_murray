@@ -1,0 +1,30 @@
+Source Plate,Source Plate Type,Source Well,Sample ID,Destination Plate Name,Destination Well,Transfer Volume,Sample Comment
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,A1,1400,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,B1,2500,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,B2,1275,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,B3,1275,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,C1,975,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,C2,675,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,C3,350,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,D1,10000,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,D2,10000,
+Source[1],384PP_AQ_BP,A01,water,Nunc_384_black_glassbottom,D3,10000,
+Source[1],384PP_AQ_BP,A03,Positive Control,Nunc_384_black_glassbottom,A1,1100,Actual concentration: 0.99
+Source[1],384PP_AQ_BP,A05,7-psigmaX-deGFP,Nunc_384_black_glassbottom,B2,600,Actual concentration: 4.92
+Source[1],384PP_AQ_BP,A05,7-psigmaX-deGFP,Nunc_384_black_glassbottom,B3,600,Actual concentration: 4.92
+Source[1],384PP_AQ_BP,A05,7-psigmaX-deGFP,Nunc_384_black_glassbottom,C1,600,Actual concentration: 4.92
+Source[1],384PP_AQ_BP,A05,7-psigmaX-deGFP,Nunc_384_black_glassbottom,C2,600,Actual concentration: 4.92
+Source[1],384PP_AQ_BP,A05,7-psigmaX-deGFP,Nunc_384_black_glassbottom,C3,600,Actual concentration: 4.92
+Source[1],384PP_AQ_BP,A07,13-pLac-LacO-sigmaX,Nunc_384_black_glassbottom,B3,625,Actual concentration: 4.06
+Source[1],384PP_AQ_BP,A07,13-pLac-LacO-sigmaX,Nunc_384_black_glassbottom,C1,925,Actual concentration: 6.01
+Source[1],384PP_AQ_BP,A07,13-pLac-LacO-sigmaX,Nunc_384_black_glassbottom,C2,1225,Actual concentration: 7.95
+Source[1],384PP_AQ_BP,A07,13-pLac-LacO-sigmaX,Nunc_384_black_glassbottom,C3,1550,Actual concentration: 10.06
+Source[1],384PP_AQ_BP,A09,1:2 #13,Nunc_384_black_glassbottom,B2,625,Actual concentration: 2.04
+Source[1],384PP_AQ_BP,A11,txtl_mm,Nunc_384_black_glassbottom,A1,7500,
+Source[1],384PP_AQ_BP,A11,txtl_mm,Nunc_384_black_glassbottom,B1,7500,
+Source[1],384PP_AQ_BP,A11,txtl_mm,Nunc_384_black_glassbottom,B2,7500,
+Source[1],384PP_AQ_BP,A11,txtl_mm,Nunc_384_black_glassbottom,B3,7500,
+Source[1],384PP_AQ_BP,A11,txtl_mm,Nunc_384_black_glassbottom,C1,7500,
+Source[1],384PP_AQ_BP,A11,txtl_mm,Nunc_384_black_glassbottom,C2,6500,
+Source[1],384PP_AQ_BP,A12,txtl_mm,Nunc_384_black_glassbottom,C2,1000,
+Source[1],384PP_AQ_BP,A12,txtl_mm,Nunc_384_black_glassbottom,C3,7500,

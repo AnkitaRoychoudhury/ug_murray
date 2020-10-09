@@ -1,0 +1,37 @@
+Materials used:
+
+water:
+	stock concentration: 1.00 <murraylab_tools.echo.echo_functions.SourcePlate object at 0x117b44950>
+	total volume: 59.45 uL
+Positive Control:
+	stock concentration: 8.99 <murraylab_tools.echo.echo_functions.SourcePlate object at 0x117b44950> (19.00 ng/uL)
+	total volume: 22.10 uL
+Negative Control:
+	stock concentration: 0.00 <murraylab_tools.echo.echo_functions.SourcePlate object at 0x117b44950>
+	total volume: 0.00 uL
+7-psigmaX-deGFP:
+	stock concentration: 81.98 <murraylab_tools.echo.echo_functions.SourcePlate object at 0x117b44950> (174.00 ng/uL)
+	total volume: 24.00 uL
+13-pLac-LacO-sigmaX:
+	stock concentration: 64.92 <murraylab_tools.echo.echo_functions.SourcePlate object at 0x117b44950> (133.00 ng/uL)
+	total volume: 25.32 uL
+1:2 #13:
+	stock concentration: 32.70 <murraylab_tools.echo.echo_functions.SourcePlate object at 0x117b44950> (67.00 ng/uL)
+	total volume: 21.62 uL
+Master Mix (including 10% excess):
+	Tubes of extract needed: 2
+	Tubes of buffer needed: 2
+txtl_mm:
+	Stock Concentration: 1 x
+	Total Volume: 94500.00
+		41.58 uL Extract (1.000 )
+		52.92 uL Buffer (1.000 )
+
+On the source plate:
+	Add 59.45 uL of water in well: A01
+	Add 22.1 uL of Positive Control in well: A03
+	Add 24.0 uL of 7-psigmaX-deGFP in well: A05
+	Add 25.325 uL of 13-pLac-LacO-sigmaX in well: A07
+	Add 21.625 uL of 1:2 #13 in well: A09
+	Add 65.0 uL of txtl_mm in well: A11
+	Add 29.5 uL of txtl_mm in well: A12
