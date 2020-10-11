@@ -1,0 +1,14 @@
+<model>
+<species name="metabolite_adp_atp_usebiocrnpyler_719399" value="0.0" />
+<species name="metabolite_atp_atp_usebiocrnpyler_719399" value="10.0" />
+<species name="metabolite_pi_atp_usebiocrnpyler_719399" value="0.0" />
+
+<parameter name="k" value="50.0" />
+<parameter name="DummyVar_UnimolecularPropensity_k_0" value="50.0" />
+
+<reaction text= "metabolite_atp_atp_usebiocrnpyler_719399 -- metabolite_adp_atp_usebiocrnpyler_719399 + metabolite_pi_atp_usebiocrnpyler_719399 ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_0" species="metabolite_atp_atp_usebiocrnpyler_719399" />
+	<delay type="none" />
+</reaction>
+
+</model>

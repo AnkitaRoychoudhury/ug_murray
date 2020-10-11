@@ -1,0 +1,11 @@
+well,ingredient1,concentration1,unit1,ingredient2,...
+A1,Positive Control,0.988965230064543,concentration,txtl_mm,0.75,fraction,water,0.14,fraction
+B1,txtl_mm,0.75,fraction,water,0.25,fraction
+B2,7-psigmaX-deGFP,4.918588873812754,concentration,1:2 #13,2.044038972196189,concentration,txtl_mm,0.75,fraction,water,0.1275,fraction
+B3,7-psigmaX-deGFP,4.918588873812754,concentration,13-pLac-LacO-sigmaX,4.057569900031241,concentration,txtl_mm,0.75,fraction,water,0.1275,fraction
+C1,7-psigmaX-deGFP,4.918588873812754,concentration,13-pLac-LacO-sigmaX,6.005203452046236,concentration,txtl_mm,0.75,fraction,water,0.0975,fraction
+C2,7-psigmaX-deGFP,4.918588873812754,concentration,13-pLac-LacO-sigmaX,7.952837004061231,concentration,txtl_mm,0.75,fraction,water,0.0675,fraction
+C3,7-psigmaX-deGFP,4.918588873812754,concentration,13-pLac-LacO-sigmaX,10.062773352077476,concentration,txtl_mm,0.75,fraction,water,0.035,fraction
+D1,txtl_mm,0.0,fraction,water,1.0,fraction
+D2,txtl_mm,0.0,fraction,water,1.0,fraction
+D3,txtl_mm,0.0,fraction,water,1.0,fraction

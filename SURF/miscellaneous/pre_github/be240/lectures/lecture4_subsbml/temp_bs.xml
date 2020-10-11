@@ -1,0 +1,39 @@
+<model>
+<species name="G_bioscrape_generated_model_775989" value="1.0" />
+<species name="mRNA_T_bioscrape_generated_model_775989_1_combined" value="0.0" />
+<species name="X_bioscrape_generated_model_267584" value="0.0" />
+<species name="I_bioscrape_generated_model_30968" value="2.0" />
+<species name="S_bioscrape_generated_model_775989_1_combined" value="0.0" />
+
+<parameter name="KI_combined" value="10.0" />
+<parameter name="KX_bioscrape_generated_model_775989" value="2.0" />
+<parameter name="DummyVar_PositiveHillPropensity_n_0_bioscrape_generated_model_267584" value="1.0" />
+<parameter name="KR_bioscrape_generated_model_267584" value="20.0" />
+<parameter name="KTR_bioscrape_generated_model_267584" value="5.0" />
+<parameter name="delta_combined" value="0.1" />
+<parameter name="KI_bioscrape_generated_model_30968" value="25.0" />
+<parameter name="n_combined" value="2.0" />
+<parameter name="K0_bioscrape_generated_model_30968" value="20.0" />
+
+<reaction text= "G_bioscrape_generated_model_775989 -- mRNA_T_bioscrape_generated_model_775989_1_combined + G_bioscrape_generated_model_775989 ">
+	<propensity type="proportionalhillpositive" k="KX_bioscrape_generated_model_775989" K="KI_combined" n="n_combined" s1="S_bioscrape_generated_model_775989_1_combined" d="G_bioscrape_generated_model_775989" />
+	<delay type="none" />
+</reaction>
+<reaction text= "mRNA_T_bioscrape_generated_model_775989_1_combined -- ">
+	<propensity type="massaction" k="delta_combined" species="mRNA_T_bioscrape_generated_model_775989_1_combined" />
+	<delay type="none" />
+</reaction>
+<reaction text= "mRNA_T_bioscrape_generated_model_775989_1_combined -- mRNA_T_bioscrape_generated_model_775989_1_combined + X_bioscrape_generated_model_267584 ">
+	<propensity type="hillpositive" k="KTR_bioscrape_generated_model_267584" K="KR_bioscrape_generated_model_267584" n="DummyVar_PositiveHillPropensity_n_0_bioscrape_generated_model_267584" s1="mRNA_T_bioscrape_generated_model_775989_1_combined" />
+	<delay type="none" />
+</reaction>
+<reaction text= "X_bioscrape_generated_model_267584 -- ">
+	<propensity type="massaction" k="delta_combined" species="X_bioscrape_generated_model_267584" />
+	<delay type="none" />
+</reaction>
+<reaction text= "-- S_bioscrape_generated_model_775989_1_combined ">
+	<propensity type="hillpositive" k="K0_bioscrape_generated_model_30968" K="KI_bioscrape_generated_model_30968" n="n_combined" s1="I_bioscrape_generated_model_30968" />
+	<delay type="none" />
+</reaction>
+
+</model>
