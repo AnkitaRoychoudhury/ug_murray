@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////
+// 
+//   gro 
+// 
+//   Copyright (c) 2011-2012 Eric Klavins, University of Washington
+//   For more information, email klavins@uw.edu
+// 
+//   This program is free software; you can redistribute it and/or
+//   modify it under the terms of the GNU General Public License
+//   as published by the Free Software Foundation; either version 2
+//   of the License, or (at your option) any later version.
+// 
+//   This program is distributed in the hope that it will be useful,
+//   but WITHOUT ANY WARRANTY; without even the implied warranty of
+//   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//   GNU General Public License for more details.
+// 
+//   You should have received a copy of the GNU General Public License
+//   along with this program; if not, write to the Free Software
+//   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+// 
+// 
+
+include gro
+
+// Initialize the simulation parameters
+k1 := 5;      // signal diffusion rate
+k2 := 0.05;   // signal degradation rate
+k3 := 0.1;    // signal emission rate
+k4 := 0.02;   // cell death rate; Figure 7C shows the parameter variation simulations of k4. 
+k5 := 0.03;   // CcdB synthesis rate
+k6 := 0.01;   // CcdB degradation rate
+k7 := 0.015;  // LuxI synthesis rate
+k8 := 0.01;   // LuxI degradation rate
+k9 := 0.025;  // LuxR synthesis rate
+k10 := 0.01;  // LuxR degradation rate
+
+// Define a signal molecule
+ahl := signal( k1, k2 ); 
+
+program rk2() := {
+
+  CcdB := 0;	// CcdB, protein involved in apoptosis, count number initialized
+  LuxI := 0;	// LuxI, signal synthesis protein, count number initialized
+  LuxR := 0; 	// LuxR, signal receiving protein, count number initialized
+
+  true  : { emit_signal( ahl, k3 * LuxI ) };	// signal is emitted at every dt interval
+ 
+  rate ( k5 * get_signal( ahl ) * LuxR ) : {
+    CcdB := CcdB + 1;			// CcdB synthesis
+  }; 
+
+  rate ( k6 * CcdB ) : { CcdB := CcdB - 1 };	// CcdB degradation
+
+  rate ( k7 * volume ) : { LuxI := LuxI + 1 };  // LuxI synthesis 
+
+  rate ( k8 * LuxI ) : { LuxI := LuxI - 1 }; 	// LuxI degradation
+ 
+  rate ( k9 * volume ) : { LuxR := LuxR + 1 };	// LuxR synthesis
+
+  rate ( k10 * LuxR ) : { LuxR := LuxR - 1 }; 	// LuxR degradation  
+
+  rate ( k4 * CcdB ) : { die() }; // cell death 
+
+};
+
+program main() := {
+
+  ecoli ( [], program rk2() );	
+
+};

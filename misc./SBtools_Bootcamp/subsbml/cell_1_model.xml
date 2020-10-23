@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="combined_model_of__combined_model_of__reservoir_model_combined_model_of__combined_model_of__combined_model_of__biocrnpyler_27297_biocrnpyler_132071" substanceUnits="mole" timeUnits="second" volumeUnits="litre" areaUnits="square_metre" lengthUnits="metre" extentUnits="mole">
+    <listOfUnitDefinitions>
+      <unitDefinition id="square_metre">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_second">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="substance">
+        <listOfUnits>
+          <unit kind="dimensionless" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="cell_1_external" name="cell_1_external" spatialDimensions="3" size="1e-06" units="litre" constant="true"/>
+      <compartment id="cell_1_internal" name="cell_1_internal" spatialDimensions="3" size="0" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="IPTG_reservoir_model" name="IPTG" compartment="cell_1_external" initialConcentration="10000" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="G" compartment="cell_1_internal" initialAmount="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="S_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="IPTG" compartment="cell_1_internal" initialAmount="10000" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="T" compartment="cell_1_internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="X_tlbiocrnpyler_132071_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="X" compartment="cell_1_internal" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r0_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=proportionalhillpositive k=2 K=10 n=2 s1=S_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 d=G_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="G_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="G_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+          <speciesReference species="mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k </ci>
+                <ci> G_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 </ci>
+                <apply>
+                  <power/>
+                  <ci> S_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 </ci>
+                  <ci> n </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> S_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 </ci>
+                  <ci> n </ci>
+                </apply>
+                <ci> K </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="2"/>
+            <localParameter id="n" value="2"/>
+            <localParameter id="K" value="10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r1_txbiocrnpyler_27297_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="r1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.1  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_tlbiocrnpyler_132071_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=hillpositive k=5 K=20 n=1 s1=mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+          <speciesReference species="X_tlbiocrnpyler_132071_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k </ci>
+                <apply>
+                  <power/>
+                  <ci> mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 </ci>
+                  <ci> n </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> mRNA_T_txbiocrnpyler_27297_1_combined_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 </ci>
+                  <ci> n </ci>
+                </apply>
+                <ci> K </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="5"/>
+            <localParameter id="n" value="1"/>
+            <localParameter id="K" value="20"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r1_tlbiocrnpyler_132071_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" name="r1" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.1  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="X_tlbiocrnpyler_132071_combined_model_of__biocrnpyler_27297_biocrnpyler_132071" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> X_tlbiocrnpyler_132071_combined_model_of__biocrnpyler_27297_biocrnpyler_132071 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

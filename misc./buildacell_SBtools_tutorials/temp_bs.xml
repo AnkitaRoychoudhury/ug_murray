@@ -1,0 +1,33 @@
+<model>
+<species name="G_biocrnpyler_821798" value="0.0" />
+<species name="S_biocrnpyler_821798" value="0.0" />
+<species name="T_biocrnpyler_821798_1_combined" value="0.0" />
+<species name="X_biocrnpyler_610739" value="0.0" />
+
+<parameter name="k" value="2.0" />
+<parameter name="K" value="10.0" />
+<parameter name="n" value="2.0" />
+<parameter name="k_forward" value="0.1" />
+<parameter name="k_r0_biocrnpyler_610739" value="5.0" />
+<parameter name="K_r0_biocrnpyler_610739" value="20.0" />
+<parameter name="n_r0_biocrnpyler_610739" value="1.0" />
+<parameter name="k_forward_r1_biocrnpyler_610739" value="0.1" />
+
+<reaction text= "G_biocrnpyler_821798 -- G_biocrnpyler_821798 + T_biocrnpyler_821798_1_combined ">
+	<propensity type="general" rate="k * G_biocrnpyler_821798 * (S_biocrnpyler_821798 / K)^n / (1 + (S_biocrnpyler_821798 / K)^n)" />
+	<delay type="none" />
+</reaction>
+<reaction text= "T_biocrnpyler_821798_1_combined -- ">
+	<propensity type="general" rate="k_forward * T_biocrnpyler_821798_1_combined" />
+	<delay type="none" />
+</reaction>
+<reaction text= "T_biocrnpyler_821798_1_combined -- T_biocrnpyler_821798_1_combined + X_biocrnpyler_610739 ">
+	<propensity type="general" rate="k_r0_biocrnpyler_610739 * (T_biocrnpyler_821798_1_combined / K_r0_biocrnpyler_610739)^n_r0_biocrnpyler_610739 / (1 + (T_biocrnpyler_821798_1_combined / K_r0_biocrnpyler_610739)^n_r0_biocrnpyler_610739)" />
+	<delay type="none" />
+</reaction>
+<reaction text= "X_biocrnpyler_610739 -- ">
+	<propensity type="general" rate="k_forward_r1_biocrnpyler_610739 * X_biocrnpyler_610739" />
+	<delay type="none" />
+</reaction>
+
+</model>

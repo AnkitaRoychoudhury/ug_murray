@@ -1,0 +1,17 @@
+<model>
+<species name="D" value="83.0" />
+<species name="A" value="56.0" />
+<species name="C" value="85.0" />
+<species name="E" value="73.0" />
+<species name="B" value="42.0" />
+<species name="F" value="11.0" />
+<species name="G" value="40.0" />
+
+<parameter name="DummyVar_MassActionPropensity_k_0" value="0.651" />
+
+<reaction text= "D + A + C -- E ">
+	<propensity type="massaction" k="DummyVar_MassActionPropensity_k_0" species="D*A*C" />
+	<delay type="none" />
+</reaction>
+
+</model>

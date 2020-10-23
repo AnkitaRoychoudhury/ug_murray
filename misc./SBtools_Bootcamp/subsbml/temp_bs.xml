@@ -1,0 +1,52 @@
+<model>
+<species name="G_txbiocrnpyler_565040" value="1.0" />
+<species name="mRNA_T_txbiocrnpyler_565040_1_combined" value="0.0" />
+<species name="X_tlbiocrnpyler_132071" value="0.0" />
+<species name="I_s1biocrnpyler_27836" value="2.0" />
+<species name="S_txbiocrnpyler_565040_1_combined" value="0.0" />
+
+<parameter name="k" value="2.0" />
+<parameter name="n" value="2.0" />
+<parameter name="K" value="10.0" />
+<parameter name="k_r1_txbiocrnpyler_565040" value="0.1" />
+<parameter name="k_r0_tlbiocrnpyler_132071" value="5.0" />
+<parameter name="n_r0_tlbiocrnpyler_132071" value="1.0" />
+<parameter name="K_r0_tlbiocrnpyler_132071" value="20.0" />
+<parameter name="k_r1_tlbiocrnpyler_132071" value="0.1" />
+<parameter name="k_r0_s1biocrnpyler_27836" value="20.0" />
+<parameter name="n_r0_s1biocrnpyler_27836" value="2.0" />
+<parameter name="K_r0_s1biocrnpyler_27836" value="25.0" />
+<parameter name="DummyVar_PositiveProportionalHillPropensity_k_0" value="2.0" />
+<parameter name="DummyVar_PositiveProportionalHillPropensity_K_1" value="10.0" />
+<parameter name="DummyVar_PositiveProportionalHillPropensity_n_2" value="2.0" />
+<parameter name="DummyVar_UnimolecularPropensity_k_3" value="0.1" />
+<parameter name="DummyVar_PositiveHillPropensity_k_4" value="5.0" />
+<parameter name="DummyVar_PositiveHillPropensity_K_5" value="20.0" />
+<parameter name="DummyVar_PositiveHillPropensity_n_6" value="1.0" />
+<parameter name="DummyVar_UnimolecularPropensity_k_7" value="0.1" />
+<parameter name="DummyVar_PositiveHillPropensity_k_8" value="20.0" />
+<parameter name="DummyVar_PositiveHillPropensity_K_9" value="25.0" />
+<parameter name="DummyVar_PositiveHillPropensity_n_10" value="2.0" />
+
+<reaction text= "G_txbiocrnpyler_565040 -- G_txbiocrnpyler_565040 + mRNA_T_txbiocrnpyler_565040_1_combined ">
+	<propensity type="proportionalhillpositive" k="DummyVar_PositiveProportionalHillPropensity_k_0" K="DummyVar_PositiveProportionalHillPropensity_K_1" n="DummyVar_PositiveProportionalHillPropensity_n_2" s1="S_txbiocrnpyler_565040_1_combined" d="G_txbiocrnpyler_565040" />
+	<delay type="none" />
+</reaction>
+<reaction text= "mRNA_T_txbiocrnpyler_565040_1_combined -- ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_3" species="mRNA_T_txbiocrnpyler_565040_1_combined" />
+	<delay type="none" />
+</reaction>
+<reaction text= "mRNA_T_txbiocrnpyler_565040_1_combined -- mRNA_T_txbiocrnpyler_565040_1_combined + X_tlbiocrnpyler_132071 ">
+	<propensity type="hillpositive" k="DummyVar_PositiveHillPropensity_k_4" K="DummyVar_PositiveHillPropensity_K_5" n="DummyVar_PositiveHillPropensity_n_6" s1="mRNA_T_txbiocrnpyler_565040_1_combined" />
+	<delay type="none" />
+</reaction>
+<reaction text= "X_tlbiocrnpyler_132071 -- ">
+	<propensity type="massaction" k="DummyVar_UnimolecularPropensity_k_7" species="X_tlbiocrnpyler_132071" />
+	<delay type="none" />
+</reaction>
+<reaction text= "-- S_txbiocrnpyler_565040_1_combined ">
+	<propensity type="hillpositive" k="DummyVar_PositiveHillPropensity_k_8" K="DummyVar_PositiveHillPropensity_K_9" n="DummyVar_PositiveHillPropensity_n_10" s1="I_s1biocrnpyler_27836" />
+	<delay type="none" />
+</reaction>
+
+</model>
