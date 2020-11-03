@@ -1,0 +1,102 @@
+
+
+Software Version	3.04.17
+
+
+
+Experiment File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201024_controls_atp_t6.xpt
+Protocol File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\firefly_luminescence_protocol.prt
+
+
+
+Plate Number	Plate 1
+Date	10/24/2020
+Time	3:53:11 PM
+Reader Type:	Synergy H1
+Reader Serial Number:	271275
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	384 WELL PLATE
+Well Selection	Runtime
+Eject plate on completion	
+Set Temperature	Setpoint 29°C
+	Preheat before moving to next step
+Start Kinetic	One read only
+    Read	firefly luminescence
+	Fluorescence Endpoint
+	Full Plate
+	Filter Set 1
+	    Excitation: 350,  Emission: 560
+	    Optics: Bottom,  Gain: 60
+	Filter Set 2
+	    Excitation: 350,  Emission: 640
+	    Optics: Bottom,  Gain: 60
+	Light Source: Xenon Flash,  Lamp Energy: High
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 10
+	Read Height: 9.5 mm
+End Kinetic	
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Well ID
+B																									Well ID
+C																									Well ID
+D																									Well ID
+E																									Well ID
+F																									Well ID
+G																									Well ID
+H																									Well ID
+I																									Well ID
+J																									Well ID
+K																									Well ID
+L	SPL1	SPL2	SPL3	SPL4	SPL5																				Well ID
+M																									Well ID
+N																									Well ID
+O																									Well ID
+P																									Well ID
+
+
+
+Actual Temperature:	34.0
+
+
+
+Actual Temperature:	34.0
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+B																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+C																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+D																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+E																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+F																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+G																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+H																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+I																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+J																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+K																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+L	14331	13686	14295	14128	14279																				firefly luminescence:350,560
+	510	493	505	509	508																				firefly luminescence:350,640
+M																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+N																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+O																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+P																									firefly luminescence:350,560
+																									firefly luminescence:350,640
+

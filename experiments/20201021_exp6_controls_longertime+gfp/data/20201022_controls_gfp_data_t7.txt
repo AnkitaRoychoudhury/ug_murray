@@ -1,0 +1,94 @@
+
+
+Software Version	3.04.17
+
+
+
+Experiment File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201022_controls_gfp_t7.xpt
+Protocol File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\gfp_protocol.prt
+
+
+
+Plate Number	Plate 1
+Date	10/22/2020
+Time	3:27:58 PM
+Reader Type:	Synergy H1
+Reader Serial Number:	271275
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	384 WELL PLATE
+Well Selection	Runtime
+Eject plate on completion	
+Set Temperature	Setpoint 34°C
+	Preheat before moving to next step
+Start Kinetic	One read only
+    Read	gfp
+	Fluorescence Endpoint
+	Full Plate
+	Filter Set 1
+	    Excitation: 485,  Emission: 515
+	    Optics: Bottom,  Gain: 61
+	Filter Set 2
+	    Excitation: 485,  Emission: 515
+	    Optics: Bottom,  Gain: 100
+	Light Source: Xenon Flash,  Lamp Energy: High
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 10
+	Read Height: 9.5 mm
+End Kinetic	
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Well ID
+B																									Well ID
+C																									Well ID
+D																									Well ID
+E																									Well ID
+F																									Well ID
+G																									Well ID
+H																									Well ID
+I																									Well ID
+J																									Well ID
+K																									Well ID
+L																									Well ID
+M																									Well ID
+N	SPL1	SPL2	SPL3	SPL4	SPL5																				Well ID
+O																									Well ID
+P																									Well ID
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									gfp:485,515
+																									gfp:485,515[2]
+B																									gfp:485,515
+																									gfp:485,515[2]
+C																									gfp:485,515
+																									gfp:485,515[2]
+D																									gfp:485,515
+																									gfp:485,515[2]
+E																									gfp:485,515
+																									gfp:485,515[2]
+F																									gfp:485,515
+																									gfp:485,515[2]
+G																									gfp:485,515
+																									gfp:485,515[2]
+H																									gfp:485,515
+																									gfp:485,515[2]
+I																									gfp:485,515
+																									gfp:485,515[2]
+J																									gfp:485,515
+																									gfp:485,515[2]
+K																									gfp:485,515
+																									gfp:485,515[2]
+L																									gfp:485,515
+																									gfp:485,515[2]
+M																									gfp:485,515
+																									gfp:485,515[2]
+N																									gfp:485,515
+																									gfp:485,515[2]
+O																									gfp:485,515
+																									gfp:485,515[2]
+P																									gfp:485,515
+																									gfp:485,515[2]
+
