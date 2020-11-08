@@ -1,0 +1,97 @@
+
+
+Software Version	3.04.17
+
+
+
+Experiment File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201103_controls_atp_t4.xpt
+Protocol File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201102_firefly_luminescence_protocol.prt
+
+
+
+Plate Number	Plate 1
+Date	11/3/2020
+Time	6:53:08 PM
+Reader Type:	Synergy H1
+Reader Serial Number:	271275
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	384 WELL PLATE
+Eject plate on completion	
+Read	Luminescence Endpoint
+	Full Plate
+	Integration Time: 0:01.00 (MM:SS.ss)
+	Filter Set 1
+	    Emission: Full light
+	    Optics: Top,  Gain: 135
+	Filter Set 2
+	    Emission: Full light
+	    Optics: Top,  Gain: 215
+	Read Speed: Normal,  Delay: 100 msec
+	Extended Dynamic Range
+	Read Height: 1 mm
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Well ID
+B																									Well ID
+C																									Well ID
+D																									Well ID
+E																									Well ID
+F																									Well ID
+G																									Well ID
+H																									Well ID
+I																									Well ID
+J	SPL1	SPL4	SPL7	SPL10	SPL13																				Well ID
+K	SPL2	SPL5	SPL8	SPL11	SPL14																				Well ID
+L	SPL3	SPL6	SPL9	SPL12	SPL15																				Well ID
+M																									Well ID
+N																									Well ID
+O																									Well ID
+P																									Well ID
+
+
+
+Actual Temperature:	26.3
+
+
+
+Actual Temperature:	26.3
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Lum
+																									Lum[2]
+B																									Lum
+																									Lum[2]
+C																									Lum
+																									Lum[2]
+D																									Lum
+																									Lum[2]
+E																									Lum
+																									Lum[2]
+F																									Lum
+																									Lum[2]
+G																									Lum
+																									Lum[2]
+H																									Lum
+																									Lum[2]
+I																									Lum
+																									Lum[2]
+J	44750	195	45766	3676	119745																				Lum
+	1792546	8346	1834361	156771	OVRFLW																				Lum[2]
+K	40620	223	46951	2649	118463																				Lum
+	1546394	8651	1768602	121735	OVRFLW																				Lum[2]
+L	36669	123	43948	129	107775																				Lum
+	1373925	5824	1596859	5735	4011657																				Lum[2]
+M																									Lum
+																									Lum[2]
+N																									Lum
+																									Lum[2]
+O																									Lum
+																									Lum[2]
+P																									Lum
+																									Lum[2]
+

@@ -1,0 +1,97 @@
+
+
+Software Version	3.04.17
+
+
+
+Experiment File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201106_exp12_atp_endpt.xpt
+Protocol File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201102_firefly_luminescence_protocol.prt
+
+
+
+Plate Number	Plate 1
+Date	11/6/2020
+Time	2:56:01 PM
+Reader Type:	Synergy H1
+Reader Serial Number:	271275
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	384 WELL PLATE
+Eject plate on completion	
+Read	Luminescence Endpoint
+	Full Plate
+	Integration Time: 0:01.00 (MM:SS.ss)
+	Filter Set 1
+	    Emission: Full light
+	    Optics: Top,  Gain: 135
+	Filter Set 2
+	    Emission: Full light
+	    Optics: Top,  Gain: 215
+	Read Speed: Normal,  Delay: 100 msec
+	Extended Dynamic Range
+	Read Height: 1 mm
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Well ID
+B																									Well ID
+C																									Well ID
+D																									Well ID
+E																									Well ID
+F																									Well ID
+G																									Well ID
+H																					SPL1	SPL10			Well ID
+I																					SPL2	SPL11			Well ID
+J																					SPL3	SPL12			Well ID
+K																					SPL4	SPL13			Well ID
+L																					SPL5	SPL14			Well ID
+M																					SPL6	SPL15			Well ID
+N																					SPL7	SPL16			Well ID
+O																					SPL8	SPL17			Well ID
+P																					SPL9	SPL18			Well ID
+
+
+
+Actual Temperature:	32.3
+
+
+
+Actual Temperature:	32.3
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Lum
+																									Lum[2]
+B																									Lum
+																									Lum[2]
+C																									Lum
+																									Lum[2]
+D																									Lum
+																									Lum[2]
+E																									Lum
+																									Lum[2]
+F																									Lum
+																									Lum[2]
+G																									Lum
+																									Lum[2]
+H																					15990	17633			Lum
+																					775202	833493			Lum[2]
+I																					15981	16235			Lum
+																					772979	753895			Lum[2]
+J																					22297	19426			Lum
+																					966330	859963			Lum[2]
+K																					16451	16649			Lum
+																					786603	845194			Lum[2]
+L																					45060	37290			Lum
+																					2048472	1535734			Lum[2]
+M																					20706	18606			Lum
+																					979195	834338			Lum[2]
+N																					13035	14811			Lum
+																					625471	691814			Lum[2]
+O																					18275	13103			Lum
+																					834330	544889			Lum[2]
+P																					33075	30638			Lum
+																					1245056	1144363			Lum[2]
+
