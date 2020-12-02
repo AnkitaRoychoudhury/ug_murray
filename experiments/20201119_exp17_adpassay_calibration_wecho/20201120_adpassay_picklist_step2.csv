@@ -1,0 +1,28 @@
+﻿Source Plate Name,Source Plate Type,Source Well,Sample ID,Sample Name,Sample Group,Sample Comment,Destination Plate Name,Destination Well,Transfer Volume,,,
+Source[1],384PP_AQ_BP,A6,,,,,Destination[1],A1,10000,,KINASE DETECTION REAGENT,
+Source[1],384PP_AQ_BP,A6,,,,,Destination[1],A2,10000,,,
+Source[1],384PP_AQ_BP,A6,,,,,Destination[1],A3,10000,,,
+Source[1],384PP_AQ_BP,A6,,,,,Destination[1],A4,10000,,,
+Source[1],384PP_AQ_BP,A6,,,,,Destination[1],A5,10000,,,
+Source[1],384PP_AQ_BP,A6,,,,,Destination[1],A6,10000,,,
+Source[1],384PP_AQ_BP,A6,,,,,Destination[1],A7,10000,,,
+Source[1],384PP_AQ_BP,A7,,,,,Destination[1],A8,10000,,,
+Source[1],384PP_AQ_BP,A7,,,,,Destination[1],A9,10000,,,
+Source[1],384PP_AQ_BP,A7,,,,,Destination[1],A10,10000,,270000,nL
+Source[1],384PP_AQ_BP,A7,,,,,Destination[1],A11,10000,,270,uL
+Source[1],384PP_AQ_BP,A7,,,,,Destination[1],A12,10000,,135,uL in 2 wells
+Source[1],384PP_AQ_BP,A7,,,,,Destination[1],B1,10000,,67.5,uL in 4 wells
+Source[1],384PP_AQ_BP,A7,,,,,Destination[1],B2,10000,,82.5,uL in 4 wells
+Source[1],384PP_AQ_BP,A8,,,,,Destination[1],B3,10000,,82500,nL
+Source[1],384PP_AQ_BP,A8,,,,,Destination[1],B4,10000,,,
+Source[1],384PP_AQ_BP,A8,,,,,Destination[1],B5,10000,,70000,
+Source[1],384PP_AQ_BP,A8,,,,,Destination[1],B6,10000,,70000,
+Source[1],384PP_AQ_BP,A8,,,,,Destination[1],B8,10000,,70000,
+Source[1],384PP_AQ_BP,A8,,,,,Destination[1],B10,10000,,60000,
+Source[1],384PP_AQ_BP,A8,,,,,Destination[1],B12,10000,,,
+Source[1],384PP_AQ_BP,A9,,,,,Destination[1],C1,10000,,,
+Source[1],384PP_AQ_BP,A9,,,,,Destination[1],C2,10000,,,
+Source[1],384PP_AQ_BP,A9,,,,,Destination[1],C3,10000,,,
+Source[1],384PP_AQ_BP,A9,,,,,Destination[1],C4,10000,,,
+Source[1],384PP_AQ_BP,A9,,,,,Destination[1],C5,10000,,,
+Source[1],384PP_AQ_BP,A9,,,,,Destination[1],C12,10000,,,
