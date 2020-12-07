@@ -1,0 +1,81 @@
+
+
+Software Version	3.04.17
+
+
+
+Experiment File Path:	C:\Users\Biotek4\Box\biocircuits\Ankita\20201204_exp19_pi_endpt.xpt
+Protocol File Path:	
+
+
+
+Plate Number	Plate 1
+Date	12/4/2020
+Time	5:57:22 PM
+Reader Type:	Synergy H1
+Reader Serial Number:	18060417
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	384 WELL PLATE
+Eject plate on completion	
+Read	Absorbance Endpoint
+	Full Plate
+	Wavelengths:  850, 820
+	Read Speed: Normal,  Delay: 100 msec,  Measurements/Data Point: 8
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Well ID
+B																									Well ID
+C																									Well ID
+D																									Well ID
+E																									Well ID
+F																									Well ID
+G																									Well ID
+H	SPL1	SPL2	SPL3	SPL4																					Well ID
+I	SPL5	SPL6	SPL7	SPL8	SPL9	SPL10																			Well ID
+J	SPL11																								Well ID
+K																									Well ID
+L																									Well ID
+M																									Well ID
+N																									Well ID
+O																									Well ID
+P																									Well ID
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									850
+																									820
+B																									850
+																									820
+C																									850
+																									820
+D																									850
+																									820
+E																									850
+																									820
+F																									850
+																									820
+G																									850
+																									820
+H																									850
+																									820
+I																									850
+																									820
+J																									850
+																									820
+K																									850
+																									820
+L																									850
+																									820
+M																									850
+																									820
+N																									850
+																									820
+O																									850
+																									820
+P																									850
+																									820
+
