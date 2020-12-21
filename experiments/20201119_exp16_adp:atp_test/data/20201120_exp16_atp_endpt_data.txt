@@ -1,0 +1,97 @@
+
+
+Software Version	3.04.17
+
+
+
+Experiment File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201120_exp16_atp_endpt.xpt
+Protocol File Path:	C:\Users\Biotek2\Box\biocircuits\Ankita\20201102_firefly_luminescence_protocol.prt
+
+
+
+Plate Number	Plate 1
+Date	11/20/2020
+Time	1:58:18 PM
+Reader Type:	Synergy H1
+Reader Serial Number:	271275
+Reading Type	Reader
+
+Procedure Details
+
+Plate Type	384 WELL PLATE
+Eject plate on completion	
+Read	Luminescence Endpoint
+	Full Plate
+	Integration Time: 0:01.00 (MM:SS.ss)
+	Filter Set 1
+	    Emission: Full light
+	    Optics: Top,  Gain: 135
+	Filter Set 2
+	    Emission: Full light
+	    Optics: Top,  Gain: 215
+	Read Speed: Normal,  Delay: 100 msec
+	Extended Dynamic Range
+	Read Height: 1 mm
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Well ID
+B																									Well ID
+C																									Well ID
+D	SPL1	SPL2	SPL3	SPL4	SPL5																				Well ID
+E																									Well ID
+F																									Well ID
+G																									Well ID
+H																									Well ID
+I																									Well ID
+J																									Well ID
+K																									Well ID
+L																									Well ID
+M																									Well ID
+N																									Well ID
+O																									Well ID
+P																									Well ID
+
+
+
+Actual Temperature:	32.2
+
+
+
+Actual Temperature:	32.2
+
+Results
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24
+A																									Lum
+																									Lum[2]
+B																									Lum
+																									Lum[2]
+C																									Lum
+																									Lum[2]
+D	235	193	202	156	110																				Lum
+	15183	12869	11990	8944	6492																				Lum[2]
+E																									Lum
+																									Lum[2]
+F																									Lum
+																									Lum[2]
+G																									Lum
+																									Lum[2]
+H																									Lum
+																									Lum[2]
+I																									Lum
+																									Lum[2]
+J																									Lum
+																									Lum[2]
+K																									Lum
+																									Lum[2]
+L																									Lum
+																									Lum[2]
+M																									Lum
+																									Lum[2]
+N																									Lum
+																									Lum[2]
+O																									Lum
+																									Lum[2]
+P																									Lum
+																									Lum[2]
+
