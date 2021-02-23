@@ -252,30 +252,6 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction id="r0_atp_usebiocrnpyler_719399_combined" name="r0" reversible="false">
-        <annotation>
-          <PropensityType> type=massaction k=50  </PropensityType>
-        </annotation>
-        <listOfReactants>
-          <speciesReference species="metabolite_atp_atpsynthesisbiocrnpyler_394224_1_combined_1_combined" stoichiometry="1" constant="false"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="metabolite_adp_atpsynthesisbiocrnpyler_394224_1_combined_1_combined" stoichiometry="1" constant="false"/>
-          <speciesReference species="metabolite_pi_atpsynthesisbiocrnpyler_394224_1_combined_1_combined" stoichiometry="1" constant="false"/>
-        </listOfProducts>
-        <kineticLaw>
-          <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <apply>
-              <times/>
-              <ci> k </ci>
-              <ci> metabolite_atp_atpsynthesisbiocrnpyler_394224_1_combined_1_combined </ci>
-            </apply>
-          </math>
-          <listOfLocalParameters>
-            <localParameter id="k" value="50"/>
-          </listOfLocalParameters>
-        </kineticLaw>
-      </reaction>
       <reaction id="r0_pp_txtlbiocrnpyler_447061" name="r0" reversible="false">
         <annotation>
           <PropensityType> type=massaction k=100.0  </PropensityType>
@@ -443,6 +419,30 @@
           </math>
           <listOfLocalParameters>
             <localParameter id="k" value="0.0003"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r0_combined" name="r0" reversible="false">
+        <annotation>
+          <PropensityType> type=massaction k=0.2  </PropensityType>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="metabolite_atp_atpsynthesisbiocrnpyler_394224_1_combined_1_combined" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="metabolite_adp_atpsynthesisbiocrnpyler_394224_1_combined_1_combined" stoichiometry="1" constant="false"/>
+          <speciesReference species="metabolite_pi_atpsynthesisbiocrnpyler_394224_1_combined_1_combined" stoichiometry="1" constant="false"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> metabolite_atp_atpsynthesisbiocrnpyler_394224_1_combined_1_combined </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k" value="0.2"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
